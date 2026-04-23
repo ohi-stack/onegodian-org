@@ -29,6 +29,22 @@ Onegodian.org is responsible for:
 - Content distribution
 - Monetization layer
 
+## Current state (as of 2026-04-23)
+
+- The repository currently contains primarily platform documentation and placeholders.
+- The live production site (`https://onegodian.org`) is a WordPress/WooCommerce deployment.
+- Production-readiness findings and recommendations are documented in `docs/audits/2026-04-23-production-readiness-audit.md`.
+
+## Audit workflow
+
+```bash
+# run a repeatable live-site audit against production
+./scripts/live_site_audit.sh
+
+# optionally target another environment/base URL
+./scripts/live_site_audit.sh https://staging.example.org
+```
+
 ## Future Integrations
 
 - OHI Twin interaction
