@@ -4,6 +4,9 @@ set -euo pipefail
 BASE_URL="${1:-https://onegodian.org}"
 TIMEOUT="${TIMEOUT:-20}"
 
+export BASE_URL
+export TIMEOUT
+
 echo "== OneGodian live-site quick audit =="
 echo "Base URL: ${BASE_URL}"
 
@@ -47,29 +50,46 @@ python - <<'PY'
 from urllib.request import urlopen, Request
 from urllib.parse import urljoin, urlparse
 from html.parser import HTMLParser
-import ssl, time
-base='https://onegodian.org/'
-ctx=ssl.create_default_context()
-html=urlopen(Request(base,headers={'User-Agent':'Mozilla/5.0'}),timeout=20,context=ctx).read().decode('utf-8','ignore')
+import os
+import ssl
+import time
+
+base = os.environ['BASE_URL'].rstrip('/') + '/'
+timeout = int(os.environ.get('TIMEOUT', '20'))
+base_host = urlparse(base).netloc
+ctx = ssl.create_default_context()
+html = urlopen(
+    Request(base, headers={'User-Agent': 'Mozilla/5.0'}),
+    timeout=timeout,
+    context=ctx,
+).read().decode('utf-8', 'ignore')
+
 class P(HTMLParser):
     def __init__(self):
-        super().__init__(); self.links=[]
+        super().__init__()
+        self.links = []
+
     def handle_starttag(self, tag, attrs):
-        if tag=='a':
-            d=dict(attrs)
-            if 'href' in d: self.links.append(d['href'])
-p=P(); p.feed(html)
-seen=[]
+        if tag == 'a':
+            d = dict(attrs)
+            if 'href' in d:
+                self.links.append(d['href'])
+
+p = P()
+p.feed(html)
+seen = []
 for href in p.links:
-    h=href.strip()
-    if h.startswith(('#','mailto:','tel:','javascript:')): continue
-    u=urljoin(base,h)
-    if u not in seen: seen.append(u)
-internal=[u for u in seen if urlparse(u).netloc.endswith('onegodian.org')]
+    h = href.strip()
+    if h.startswith(('#', 'mailto:', 'tel:', 'javascript:')):
+        continue
+    u = urljoin(base, h)
+    if u not in seen:
+        seen.append(u)
+internal = [u for u in seen if urlparse(u).netloc == base_host]
 for u in internal[:60]:
-    t=time.time()
+    t = time.time()
     try:
-        r=urlopen(Request(u,headers={'User-Agent':'Mozilla/5.0'}),timeout=20,context=ctx)
+        r = urlopen(Request(u, headers={'User-Agent': 'Mozilla/5.0'}), timeout=timeout, context=ctx)
         r.read(100)
         print(f"{r.getcode()}\t{(time.time()-t)*1000:.0f}ms\t{u}")
     except Exception as e:
