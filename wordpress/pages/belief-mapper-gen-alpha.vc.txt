@@ -1,0 +1,57 @@
+[vc_row full_width="stretch_row_content" css=".vc_custom_og_belief_mapper_hero{background:radial-gradient(circle at 20% 20%,rgba(111,60,255,.22),transparent 26%),radial-gradient(circle at 80% 10%,rgba(216,179,90,.16),transparent 24%),linear-gradient(180deg,#050507 0%,#070607 58%,#15111f 100%) !important;}"][vc_column][vc_empty_space height="72px"][vc_column_text]
+<div style="max-width:1120px;margin:0 auto;text-align:center;padding:0 24px;">
+<div style="display:inline-block;padding:10px 18px;border:1px solid rgba(216,179,90,.28);border-radius:999px;background:rgba(7,6,7,.72);color:#f0d98a;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;">OneGodian™ • Belief Mapper • Gen Alpha & Beta • Identity Discovery</div>
+<h1 style="margin:28px auto 18px;max-width:980px;color:#f5f1e8;font-size:clamp(46px,7vw,84px);line-height:.98;letter-spacing:-.045em;font-weight:800;">What do you believe at your core?</h1>
+<p style="max-width:780px;margin:0 auto;color:rgba(245,241,232,.84);font-size:20px;line-height:1.65;">Five quick questions designed to help you reflect on unity, purpose, and belief identity. No account is required for the Lite experience, and the result does not assign you a religion, membership, or personal identity.</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px;">
+<a href="https://app.onegodian.com/belief-mapper" style="display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:14px;background:linear-gradient(135deg,#f0d98a,#d8b35a);color:#070607;text-decoration:none;font-weight:800;">Start the Belief Mapper</a>
+<a href="#how-it-works" style="display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:14px;border:1px solid rgba(245,241,232,.20);color:#f5f1e8;text-decoration:none;font-weight:700;background:rgba(255,255,255,.035);">How It Works</a>
+</div>
+<p style="margin:18px auto 0;color:rgba(245,241,232,.58);font-size:13px;">Voluntary reflection only. You decide how you identify.</p>
+</div>
+[/vc_column_text][vc_empty_space height="76px"][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" css=".vc_custom_og_mapper_intro{background:#070607 !important;}"][vc_column][vc_empty_space height="68px"][vc_column_text]
+<div id="how-it-works" style="max-width:1120px;margin:0 auto;padding:0 24px;">
+<div style="max-width:760px;margin-bottom:34px;">
+<div style="color:#d8b35a;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;">A short reflection experience</div>
+<h2 style="margin:0 0 14px;color:#f5f1e8;font-size:clamp(34px,5vw,56px);line-height:1.04;letter-spacing:-.035em;">Discover alignment without being labeled.</h2>
+<p style="margin:0;color:rgba(245,241,232,.78);font-size:18px;line-height:1.7;">The Belief Mapper Lite experience is the youth-facing entry point to the OneGodian Experience Layer. It simplifies the larger seven-dimension framework into five tap-only questions for fast, mobile-first reflection.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;">
+<div style="background:#070607;border:1px solid rgba(216,179,90,.22);border-radius:22px;padding:26px;box-shadow:0 18px 44px rgba(0,0,0,.22);"><div style="font-size:32px;margin-bottom:14px;">01</div><h3 style="color:#f5f1e8;margin:0 0 10px;">Five Questions</h3><p style="color:rgba(245,241,232,.72);line-height:1.6;margin:0;">Tap Yes, Not Sure, or No. No typing is required.</p></div>
+<div style="background:#070607;border:1px solid rgba(216,179,90,.22);border-radius:22px;padding:26px;box-shadow:0 18px 44px rgba(0,0,0,.22);"><div style="font-size:32px;margin-bottom:14px;">02</div><h3 style="color:#f5f1e8;margin:0 0 10px;">Instant Reflection</h3><p style="color:rgba(245,241,232,.72);line-height:1.6;margin:0;">Receive Explorer, Aligned, or Strong Alignment as an educational result.</p></div>
+<div style="background:#070607;border:1px solid rgba(216,179,90,.22);border-radius:22px;padding:26px;box-shadow:0 18px 44px rgba(0,0,0,.22);"><div style="font-size:32px;margin-bottom:14px;">03</div><h3 style="color:#f5f1e8;margin:0 0 10px;">Your Identity</h3><p style="color:rgba(245,241,232,.72);line-height:1.6;margin:0;">A result never creates membership or declares who you are. Identity remains your choice.</p></div>
+</div>
+</div>
+[/vc_column_text][vc_empty_space height="72px"][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" css=".vc_custom_og_mapper_supports{background:linear-gradient(180deg,#070607 0%,#15111f 100%) !important;}"][vc_column][vc_empty_space height="70px"][vc_column_text]
+<div style="max-width:1120px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;align-items:start;">
+<div>
+<div style="color:#d8b35a;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px;">What this supports</div>
+<h2 style="color:#f5f1e8;font-size:42px;line-height:1.05;margin:0 0 16px;">A digital-first path for the next generation.</h2>
+<p style="color:rgba(245,241,232,.76);font-size:17px;line-height:1.7;margin:0;">The Gen Alpha and Gen Beta strategy shifts OneGodian communication from institutional definition toward interactive experience: short-form discovery, mobile interaction, personalized education, creative expression, and future avatar or digital-identity experiences.</p>
+</div>
+<div style="background:#070607;border:1px solid rgba(216,179,90,.22);border-radius:22px;padding:28px;">
+<h3 style="color:#f5f1e8;margin-top:0;">Privacy-first by design</h3>
+<ul style="color:rgba(245,241,232,.76);line-height:1.8;padding-left:20px;margin-bottom:0;">
+<li>No account required for the Lite mapper.</li>
+<li>Answers are not used to automatically create membership.</li>
+<li>The result is educational, not a legal or religious classification.</li>
+<li>Belief responses should not be used for advertising or behavioral targeting.</li>
+<li>Any future saved profile requires a separate consent and retention policy.</li>
+</ul>
+</div>
+</div>
+[/vc_column_text][vc_empty_space height="72px"][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" css=".vc_custom_og_mapper_final{background:radial-gradient(circle at 50% 20%,rgba(111,60,255,.20),transparent 34%),#050507 !important;}"][vc_column][vc_empty_space height="82px"][vc_column_text]
+<div style="max-width:860px;margin:0 auto;text-align:center;padding:0 24px;">
+<div style="color:#f0d98a;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;">OneGodian Experience Layer</div>
+<h2 style="margin:0 0 18px;color:#f5f1e8;font-size:clamp(38px,6vw,64px);line-height:1;letter-spacing:-.04em;">Five questions. Your reflection. Your choice.</h2>
+<p style="margin:0 auto 28px;max-width:700px;color:rgba(245,241,232,.78);font-size:18px;line-height:1.7;">Explore the ideas behind OneGodian without conversion pressure or automatic identity assignment.</p>
+<a href="https://app.onegodian.com/belief-mapper" style="display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 30px;border-radius:14px;background:linear-gradient(135deg,#f0d98a,#d8b35a);color:#070607;text-decoration:none;font-weight:900;">Start the Belief Mapper</a>
+<p style="margin:24px auto 0;color:rgba(245,241,232,.50);font-size:12px;line-height:1.6;">ONEGODIAN, LLC software and educational infrastructure. The Belief Mapper does not create INO membership or governance status.</p>
+</div>
+[/vc_column_text][vc_empty_space height="84px"][/vc_column][/vc_row]
