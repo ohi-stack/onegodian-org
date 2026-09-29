@@ -12,12 +12,33 @@ echo "Base URL: ${BASE_URL}"
 
 echo
 printf '## Response + timing\n'
-for path in / /store/ /membership/ /contact/; do
+for path in / /store/ /membership/ /contact/ /member-dashboard/ /my-account/ /onegodian-101/; do
   url="${BASE_URL%/}${path}"
   curl -sS -L --max-time "${TIMEOUT}" -o /dev/null \
     -w "${url} | code=%{http_code} time=%{time_total}s ttfb=%{time_starttransfer}s bytes=%{size_download}\n" \
     "$url"
 done
+
+echo
+printf '## Member Dashboard access surface\n'
+member_dashboard=$(mktemp)
+trap 'rm -f "$member_dashboard"' EXIT
+curl -sS -L --max-time "${TIMEOUT}" "${BASE_URL%/}/member-dashboard/" -o "$member_dashboard"
+
+if rg -q '\[onegodian_members_dashboard\]|\[onegodian_member_dashboard\]' "$member_dashboard"; then
+  echo 'FAIL: Member Dashboard is exposing a literal OneGodian Members shortcode.'
+  rg -n '\[onegodian_members_dashboard\]|\[onegodian_member_dashboard\]' "$member_dashboard" | head -n 10 || true
+else
+  echo 'PASS: No literal Member Dashboard shortcode is exposed.'
+fi
+
+if rg -qi 'OneGodian[^<]{0,40}Member Access|Login Details|Username or email address|Lost your password|Forgot password' "$member_dashboard"; then
+  echo 'PASS: Logged-out Member Dashboard exposes recognizable login details/access UI.'
+else
+  echo 'NOTE: Login Details markers were not detected. Verify whether the request was authenticated, redirected, cached, or rendered by a different account template.'
+fi
+
+echo 'Contract markers checked: onegodian_members_dashboard -> onegodian_member_dashboard; Login Details.'
 
 echo
 printf '## Security headers\n'
