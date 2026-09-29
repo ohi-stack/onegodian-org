@@ -12,7 +12,7 @@ echo "Base URL: ${BASE_URL}"
 
 echo
 printf '## Response + timing\n'
-for path in / /store/ /membership/ /contact/; do
+for path in / /store/ /membership/ /contact/ /member-dashboard/ /my-account/ /onegodian-101/; do
   url="${BASE_URL%/}${path}"
   curl -sS -L --max-time "${TIMEOUT}" -o /dev/null \
     -w "${url} | code=%{http_code} time=%{time_total}s ttfb=%{time_starttransfer}s bytes=%{size_download}\n" \
