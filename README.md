@@ -1,56 +1,56 @@
-# Onegodian.org
+# OneGodian.org
 
-Core platform for the Onegodian ecosystem.
+Canonical **ORGANIZATION** property of the interconnected OneGodian Platform.
 
-## Overview
+## Canonical role
 
-Onegodian.org serves as the primary interface for users, agents, and systems interacting with the Onegodian platform.
+`https://OneGodian.org` is the public identity, mission, history, membership, records, educational-explanation, and institutional/public-information home for OneGodian.
 
-It provides:
-- Content and publishing
-- Commerce (courses, digital products)
-- User interaction layer
-- Integration with AI agents and OHI Twin systems
+It is **not** the central technical application, commerce authority, University runtime, finance platform, or protocol runtime.
 
-## Architecture
+## Current OneGodian Platform
 
-This repository represents the platform layer and connects to:
+| Layer | Canonical property | Primary role |
+|---|---|---|
+| ORGANIZATION | `https://OneGodian.org` | Public identity, mission, history, membership, records, educational explanations, institutional/public information |
+| STORE | `https://OneGodian.com` | Products, digital downloads, merchandise, certificates, services, campaigns, member purchases |
+| EDUCATION | `https://u.OneGodian.com` | University, courses, lessons, learning paths, books, OneGodianese Dictionary, digital e-learning products, student merchandise, onboarding, training certificates |
+| GALAXY | `https://galaxy.OneGodian.com` | Galaxy map, planets, world stores, lore, characters, media, planetary navigation |
+| CAPITAL | `https://ODeFi.OneGodian.com` | ONEGODIAN, LLC finance materials, capital strategy, disclosure center, contributor information, approved financial-platform functions |
+| PROTOCOL | `https://OMOS.OneGodian.com` | OMOS protocol/specification, alignment tools, developer documentation, integrations, API framework |
+| SHARED PLATFORM CORE | `https://api.OneGodian.org` | Cross-site API, authentication, connectors, adapters, MCP, synchronization, analytics, valuation, webhooks, registries, shared plugin services |
 
-- onegodian-api (backend services)
-- onegodian-agent-gateway (agent access)
-- u-onegodian-org (education system)
-- acc-agent-command-console (control interface)
+## Architecture rule
 
-## Role in Ecosystem
+The former standalone **OneGodian App / `app.onegodian.com` is retired**. It must not be treated as an active platform, deployment target, navigation destination, or architectural dependency.
 
-Onegodian.org is responsible for:
-- Human-facing experience
-- Entry point for agents
-- Content distribution
-- Monetization layer
+The product is now the **interconnected OneGodian Platform**.
 
-## Current state (as of 2026-04-23)
+```text
+ONEGODIAN, LLC
+      ↓
+OneGodian Platform
+      ↓
+api.OneGodian.org
+      ↓
+Plugins + Connections + Adapters + MCP
+      ↓
+Specialized OneGodian Properties
+```
 
-- The repository currently contains primarily platform documentation and placeholders.
-- The live production site (`https://onegodian.org`) is a WordPress/WooCommerce deployment.
-- Production-readiness findings and recommendations are documented in `docs/audits/2026-04-23-production-readiness-audit.md`.
+## Repository responsibility
+
+This repository supports the public OneGodian.org experience and its deployment/integration contracts. Specialized runtimes remain authoritative in their own repositories.
+
+OneGodian Members is a standalone membership runtime. OneGodian University LMS owns formal learning. OneGodian.com owns store/commerce presentation. ODeFi owns the active finance platform. OMOS owns the protocol/developer layer. Cross-property synchronization belongs through `api.OneGodian.org`.
 
 ## Audit workflow
 
 ```bash
-# run a repeatable live-site audit against production
 ./scripts/live_site_audit.sh
-
-# optionally target another environment/base URL
 ./scripts/live_site_audit.sh https://staging.example.org
 ```
 
-## Future Integrations
+## Production discipline
 
-- OHI Twin interaction
-- Agent-based transactions
-- API-driven workflows
-
-## Organization
-
-Part of the Onegodian ecosystem.
+Repository documentation or code does not by itself prove live production deployment. Public status must be based on verified runtime evidence.
