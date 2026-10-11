@@ -16,7 +16,6 @@
  */
 
 if (!defined('ABSPATH') || !defined('WP_CLI') || !WP_CLI) {
-    fwrite(STDERR, "Run this file inside WP-CLI using wp eval-file.\n");
     return;
 }
 
