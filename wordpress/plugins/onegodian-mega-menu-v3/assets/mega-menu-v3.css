@@ -170,6 +170,29 @@
   box-shadow: 0 8px 25px rgba(216,179,90,.12);
 }
 .ogmm-v3__utility .ogmm-v3__link-arrow { display: none; }
+.ogmm-v3__utility-menu { position: relative; color: var(--ogmm-ink); }
+.ogmm-v3__utility-menu > summary {
+  display: inline-flex; align-items: center; cursor: pointer; padding: 10px 13px;
+  min-height: 43px; border: 1px solid var(--ogmm-line); border-radius: 999px;
+  color: var(--ogmm-gold-bright); background: rgba(216,179,90,.08);
+  font-size: 11px; font-weight: 700;
+}
+.ogmm-v3__utility-menu > summary:focus-visible { outline: 2px solid var(--ogmm-gold-bright); outline-offset: 3px; }
+.ogmm-v3__utility-popup {
+  position: absolute; right: 0; top: calc(100% + 5px); width: min(300px,90vw);
+  padding: 15px; border-radius: 16px; border: 1px solid var(--ogmm-line);
+  color: var(--ogmm-ink); background: #120d1c; box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  max-height: 70vh; overflow: auto; z-index: 150;
+}
+.ogmm-v3__utility-list { margin: 0; padding: 0 0 0 9px; list-style: none; }
+.ogmm-v3__utility-list li { margin: 0; padding: 5px 0; }
+.ogmm-v3__utility-list .ogmm-v3__utility-list { border-left: 1px solid var(--ogmm-line); margin-left: 6px; }
+.ogmm-v3__utility-sub-link {
+  color: var(--ogmm-ink)!important; font-size: 12px;
+  display: flex; gap: 8px; align-items: center; padding: 6px;
+}
+.ogmm-v3__utility-sub-link span:first-child { flex: 1; }
+.ogmm-v3__utility-sub-link:hover { color: var(--ogmm-gold-bright)!important; }
 .ogmm-v3__mobile-toggle { display: none; }
 @keyframes ogmm-v3-sweep {
   0% { transform: translateX(0); opacity: 0; }
@@ -233,6 +256,9 @@
   .ogmm-v3__link-arrow { opacity: .8; transform: none; }
   .ogmm-v3__utilities { justify-content: stretch; margin-top: 18px; padding: 8px; }
   .ogmm-v3__utility { min-height: 44px; justify-content: center; flex: 1 1 auto; }
+  .ogmm-v3__utility-menu { flex: 1 1 auto; }
+  .ogmm-v3__utility-menu > summary { min-height: 44px; justify-content: center; }
+  .ogmm-v3__utility-popup { position: static; width: 100%; margin-top: 7px; box-shadow: none; }
 }
 @media (max-width:600px) {
   .ogmm-v3__columns { grid-template-columns: 1fr; }
