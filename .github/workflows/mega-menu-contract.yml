@@ -14,6 +14,10 @@ on:
   pull_request:
     paths:
       - 'config/onegodian-org-mega-menu.json'
+      - 'sitemaps/**'
+      - 'wordpress/pages/site-map.vc.txt'
+      - 'docs/navigation/ONEGODIAN_ORG_SITE_MAP_2026-10-11.md'
+      - 'scripts/test_site_map_contract.py'
       - 'scripts/sync_onegodian_mega_menu.php'
       - 'scripts/test_mega_menu_contract.py'
       - '.github/workflows/mega-menu-contract.yml'
