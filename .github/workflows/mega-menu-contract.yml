@@ -53,3 +53,14 @@ jobs:
         run: php scripts/test_mega_menu_v3.php
       - name: JavaScript syntax check
         run: node --check wordpress/plugins/onegodian-mega-menu-v3/assets/mega-menu-v3.js
+      - name: Package WordPress-installable v3 plugin
+        run: |
+          cd wordpress/plugins
+          zip -qr "$GITHUB_WORKSPACE/onegodian-mega-menu-v3.zip" onegodian-mega-menu-v3
+          unzip -t "$GITHUB_WORKSPACE/onegodian-mega-menu-v3.zip"
+      - name: Retain downloadable v3 staging ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: onegodian-mega-menu-v3-wordpress-install
+          path: onegodian-mega-menu-v3.zip
+          retention-days: 30
