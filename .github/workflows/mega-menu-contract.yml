@@ -1,0 +1,32 @@
+name: OneGodian.org Mega Menu Contract
+
+on:
+  push:
+    paths:
+      - 'config/onegodian-org-mega-menu.json'
+      - 'scripts/sync_onegodian_mega_menu.php'
+      - 'scripts/test_mega_menu_contract.py'
+      - '.github/workflows/mega-menu-contract.yml'
+  pull_request:
+    paths:
+      - 'config/onegodian-org-mega-menu.json'
+      - 'scripts/sync_onegodian_mega_menu.php'
+      - 'scripts/test_mega_menu_contract.py'
+      - '.github/workflows/mega-menu-contract.yml'
+
+jobs:
+  manifest-and-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+      - name: Validate mega-menu source contract
+        run: python scripts/test_mega_menu_contract.py
+      - name: Lint WordPress menu synchronizer
+        run: php -l scripts/sync_onegodian_mega_menu.php
