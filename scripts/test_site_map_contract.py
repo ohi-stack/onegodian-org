@@ -48,7 +48,7 @@ expected_html = [
 ]
 assert len(html_urls) == 41 and html_urls == expected_html
 for e in entries:
-    assert f"\`{e['slug']}\`" in human, f"Missing markdown route: {e['slug']}"
+    assert f"`{e['slug']}`" in human, f"Missing markdown route: {e['slug']}"
     if e["reported_status"] == "Missing":
         assert "https://onegodian.org" + e["slug"] not in html_urls
         assert "https://onegodian.org" + e["slug"] not in seo_urls
