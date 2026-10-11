@@ -268,6 +268,19 @@
   .ogmm-v3__link { font-size: 13px; }
 }
 @keyframes ogmm-v3-mobile-enter { from {opacity:0;transform:translateY(-7px);} to {opacity:1;transform:translateY(0);} }
+
+/* Progressive enhancement: no-JS desktop visitors can still reach all links. */
+@media (hover:hover) and (pointer:fine) and (min-width:1041px) {
+  .ogmm-v3:not([data-ogmm-ready="1"]) .ogmm-v3__item:hover > .ogmm-v3__panel,
+  .ogmm-v3:not([data-ogmm-ready="1"]) .ogmm-v3__item:focus-within > .ogmm-v3__panel {
+    opacity: 1; visibility: visible; pointer-events: auto; transform: translate(-50%,0);
+  }
+}
+@media (max-width:1040px) {
+  .ogmm-v3:not([data-ogmm-ready="1"]) .ogmm-v3__mobile-toggle { display: none; }
+  .ogmm-v3:not([data-ogmm-ready="1"]) .ogmm-v3__navigation { display: block; }
+  .ogmm-v3:not([data-ogmm-ready="1"]) .ogmm-v3__panel { display: block; }
+}
 @media (prefers-reduced-motion:reduce) {
   .ogmm-v3 *, .ogmm-v3 *::before,.ogmm-v3 *::after {
     animation-duration: .01ms!important;
