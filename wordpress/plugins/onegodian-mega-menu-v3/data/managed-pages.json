@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "site": "https://onegodian.org",
+  "source": "2026-10-11 user-supplied OneGodian Members page inventory",
+  "owner": "ohi-stack/onegodian-org (site navigation only); shortcode/runtime authority: ohi-stack/onegodian-members",
+  "effective_date": "2026-10-11",
+  "top_level": [
+    "ABOUT",
+    "IDENTITY",
+    "LEARN",
+    "TIME",
+    "COMMUNITY",
+    "ECOSYSTEM",
+    "SUPPORT"
+  ],
+  "policy": {
+    "navigation_mode": "additive / no removal of unrelated menu items",
+    "do_not_publish_reported_missing": [
+      "/members/",
+      "/groups/"
+    ],
+    "publish_gate": "published WordPress page AND registered shortcode",
+    "login_gate": "OneGodian Members runtime; menu visibility alone is not authorization",
+    "legacy_redirects": {
+      "/memberships/": "/membership/",
+      "/my-onegodian-id-card/": "/member-id/"
+    }
+  },
+  "entries": [
+    {
+      "area": "ABOUT",
+      "group": "History & Legacy",
+      "label": "History & Legacy",
+      "slug": "/history-legacy/",
+      "shortcode": "[onegodian_history_legacy]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "History & Legacy",
+      "label": "Interactive Timeline",
+      "slug": "/interactive-timeline/",
+      "shortcode": "[onegodian_interactive_timeline]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "History & Legacy",
+      "label": "1926 → 2026 → 2126",
+      "slug": "/1926-2026-2126/",
+      "shortcode": "[onegodian_legacy_eras]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "History & Legacy",
+      "label": "Digital Museum",
+      "slug": "/digital-museum/",
+      "shortcode": "[onegodian_digital_museum]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Founder Records",
+      "label": "Founder History",
+      "slug": "/founder-history/",
+      "shortcode": "[onegodian_founder_history]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Founder Records",
+      "label": "OneGodian Origin",
+      "slug": "/onegodian-origins/",
+      "shortcode": "[onegodian_origins]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Founder Records",
+      "label": "Major Milestones",
+      "slug": "/major-milestones/",
+      "shortcode": "[onegodian_major_milestones]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Archives & Evidence",
+      "label": "Creations & Inventions",
+      "slug": "/creations-inventions/",
+      "shortcode": "[onegodian_creations]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Archives & Evidence",
+      "label": "Documents & Artifacts",
+      "slug": "/documents-artifacts/",
+      "shortcode": "[onegodian_artifacts]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Archives & Evidence",
+      "label": "Media Archive",
+      "slug": "/media-archive/",
+      "shortcode": "[onegodian_media_archive]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ABOUT",
+      "group": "Archives & Evidence",
+      "label": "Verified Records",
+      "slug": "/verified-records/",
+      "shortcode": "[onegodian_verified_records]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Membership & Ally",
+      "label": "Membership",
+      "slug": "/membership/",
+      "shortcode": "[onegodian_members_pricing]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Membership & Ally",
+      "label": "OneGodian Ally",
+      "slug": "/onegodian-ally/",
+      "shortcode": "[onegodian_ally_status]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Belief Mapping",
+      "label": "Identity & Belief Mapper Lite",
+      "slug": "/belief-mapper-lite/",
+      "shortcode": "[onegodian_lite_mapper]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Belief Mapping",
+      "label": "Identity & Belief Mapper",
+      "slug": "/belief-mapper/",
+      "shortcode": "[onegodian_identity_mapper_dashboard]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Belief Mapping",
+      "label": "Personal Belief Map",
+      "slug": "/belief-map/",
+      "shortcode": "[onegodian_belief_map]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Personal Identity",
+      "label": "OneGodian Journey",
+      "slug": "/onegodian-journey/",
+      "shortcode": "[onegodian_journey_center]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Personal Identity",
+      "label": "Member Certificate",
+      "slug": "/member-certificate/",
+      "shortcode": "[onegodian_member_certificate]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "IDENTITY",
+      "group": "Personal Identity",
+      "label": "My OneGodian ID",
+      "slug": "/member-id/",
+      "shortcode": "[onegodian_digital_id]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "LEARN",
+      "group": "OneGodian 101",
+      "label": "OneGodian 101",
+      "slug": "/onegodian-101/",
+      "shortcode": "[onegodian_101]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "LEARN",
+      "group": "OneGodian 101",
+      "label": "OneGodian 101 Progress",
+      "slug": "/onegodian-101-progress/",
+      "shortcode": "[onegodian_101_progress]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "LEARN",
+      "group": "Learning Resources",
+      "label": "Member Resources",
+      "slug": "/member-resources/",
+      "shortcode": "[onegodian_member_resources]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "TIME",
+      "group": "Time Tools",
+      "label": "OneGodian Time",
+      "slug": "/onegodian-time/",
+      "shortcode": "[onegodian_time_dashboard]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "TIME",
+      "group": "Time Tools",
+      "label": "OneGodian Date Converter",
+      "slug": "/onegodian-date-converter/",
+      "shortcode": "[onegodian_date_converter]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Member Access",
+      "label": "Member Dashboard",
+      "slug": "/member-dashboard/",
+      "shortcode": "[onegodian_member_dashboard]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Member Access",
+      "label": "Member Profile",
+      "slug": "/member-profile/",
+      "shortcode": "[onegodian_member_profile]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Member Access",
+      "label": "Login & Account",
+      "slug": "/my-account/",
+      "shortcode": "[onegodian_account]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Community & Groups",
+      "label": "OneGodian Community",
+      "slug": "/community/",
+      "shortcode": "[onegodian_social_dashboard]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Community & Groups",
+      "label": "Members",
+      "slug": "/members/",
+      "shortcode": "[onegodian_community_directory]",
+      "login_required": true,
+      "reported_status": "Missing"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Community & Groups",
+      "label": "Community Groups",
+      "slug": "/groups/",
+      "shortcode": "[onegodian_community_groups]",
+      "login_required": true,
+      "reported_status": "Missing"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Communications & Help",
+      "label": "Messages",
+      "slug": "/member-messages/",
+      "shortcode": "[onegodian_messages]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Communications & Help",
+      "label": "Notifications",
+      "slug": "/member-notifications/",
+      "shortcode": "[onegodian_notifications]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "COMMUNITY",
+      "group": "Communications & Help",
+      "label": "Member Support",
+      "slug": "/member-support/",
+      "shortcode": "[onegodian_member_support]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ECOSYSTEM",
+      "group": "Member Ecosystem",
+      "label": "Member Ecosystem",
+      "slug": "/member-ecosystem/",
+      "shortcode": "[onegodian_member_ecosystem]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ECOSYSTEM",
+      "group": "Creators & Affiliates",
+      "label": "Affiliate Dashboard",
+      "slug": "/affiliate-dashboard/",
+      "shortcode": "[onegodian_affiliate_dashboard]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "ECOSYSTEM",
+      "group": "Creators & Affiliates",
+      "label": "Creator Network",
+      "slug": "/creator-network/",
+      "shortcode": "[onegodian_creator_network]",
+      "login_required": true,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contributors",
+      "label": "Contributors",
+      "slug": "/contributors/",
+      "shortcode": "[onegodian_contributors_page]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contributors",
+      "label": "Contributor Intake",
+      "slug": "/contributor-intake/",
+      "shortcode": "[onegodian_contributor_intake_form]",
+      "login_required": false,
+      "reported_status": "Unspecified in supplied list"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contact & Inquiries",
+      "label": "Contact OneGodian",
+      "slug": "/contact/",
+      "shortcode": "[onegodian_contact_form]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contact & Inquiries",
+      "label": "Development Inquiry",
+      "slug": "/development-inquiry/",
+      "shortcode": "[onegodian_development_inquiry_form]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contact & Inquiries",
+      "label": "Business Inquiry",
+      "slug": "/business-inquiry/",
+      "shortcode": "[onegodian_business_inquiry_form]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contact & Inquiries",
+      "label": "Community Inquiry",
+      "slug": "/community-inquiry/",
+      "shortcode": "[onegodian_community_inquiry_form]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    },
+    {
+      "area": "SUPPORT",
+      "group": "Contact & Inquiries",
+      "label": "Membership Inquiry",
+      "slug": "/membership-inquiry/",
+      "shortcode": "[onegodian_membership_inquiry_form]",
+      "login_required": false,
+      "reported_status": "Managed / Working"
+    }
+  ]
+}
