@@ -177,11 +177,7 @@
   100% { transform: translateX(360%); opacity: 0; }
 }
 @media (hover:hover) and (pointer:fine) and (min-width:1041px) {
-  .ogmm-v3__item:hover > .ogmm-v3__panel,
-  .ogmm-v3__item:focus-within > .ogmm-v3__panel {
-    opacity: 1; visibility: visible; pointer-events: auto;
-    transform: translate(-50%,0);
-  }
+  /* JavaScript owns panel state so Escape and keyboard dismissals always work. */
   .ogmm-v3__item:hover > .ogmm-v3__trigger::after,
   .ogmm-v3__item:focus-within > .ogmm-v3__trigger::after { transform: scaleX(1); }
 }
