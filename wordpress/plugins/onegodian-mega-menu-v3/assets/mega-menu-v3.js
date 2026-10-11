@@ -15,6 +15,7 @@
     const roots = Array.from(nav.querySelectorAll('[data-ogmm-item]'));
     const triggers = roots.map(item => item.querySelector('.ogmm-v3__trigger'));
     let active = null;
+    let suppressFocusOpen = false;
     let closeDelay = null;
 
     const clearDelay = () => {
@@ -79,7 +80,7 @@
         }, 170);
       });
       item.addEventListener('focusin', () => {
-        if (!mobileQuery.matches) openItem(item);
+        if (!mobileQuery.matches && !suppressFocusOpen) openItem(item);
       });
     });
 
@@ -89,7 +90,11 @@
           const old = active;
           closeActive();
           const button = old.querySelector('.ogmm-v3__trigger');
-          if (button) button.focus();
+          if (button) {
+            suppressFocusOpen = true;
+            button.focus();
+            suppressFocusOpen = false;
+          }
           event.preventDefault();
         } else if (mobileQuery.matches && nav.classList.contains('is-mobile-open')) {
           closeMobile();
