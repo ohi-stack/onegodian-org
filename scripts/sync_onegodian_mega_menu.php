@@ -88,7 +88,7 @@ $virtual_id = -1;
 $find = static function ($parent, $title) use (&$items) {
     foreach ($items as $item) {
         if ((int) $item->menu_item_parent === (int) $parent
-            && mb_strtolower(trim((string) $item->title)) === mb_strtolower(trim((string) $title))) {
+            && strtolower(trim((string) $item->title)) === strtolower(trim((string) $title))) {
             return $item;
         }
     }
