@@ -10,6 +10,9 @@ on:
       - 'scripts/test_site_map_contract.py'
       - 'scripts/sync_onegodian_mega_menu.php'
       - 'scripts/test_mega_menu_contract.py'
+      - 'wordpress/plugins/onegodian-mega-menu-v3/**'
+      - 'scripts/test_mega_menu_v3.php'
+      - 'docs/navigation/ONEGODIAN_MEGA_MENU_V3_DEPLOYMENT.md'
       - '.github/workflows/mega-menu-contract.yml'
   pull_request:
     paths:
@@ -20,6 +23,9 @@ on:
       - 'scripts/test_site_map_contract.py'
       - 'scripts/sync_onegodian_mega_menu.php'
       - 'scripts/test_mega_menu_contract.py'
+      - 'wordpress/plugins/onegodian-mega-menu-v3/**'
+      - 'scripts/test_mega_menu_v3.php'
+      - 'docs/navigation/ONEGODIAN_MEGA_MENU_V3_DEPLOYMENT.md'
       - '.github/workflows/mega-menu-contract.yml'
 
 jobs:
@@ -38,5 +44,12 @@ jobs:
         run: |
           python scripts/test_mega_menu_contract.py
           python scripts/test_site_map_contract.py
-      - name: Lint WordPress menu synchronizer
-        run: php -l scripts/sync_onegodian_mega_menu.php
+      - name: Lint WordPress navigation code
+        run: |
+          php -l scripts/sync_onegodian_mega_menu.php
+          php -l wordpress/plugins/onegodian-mega-menu-v3/onegodian-mega-menu-v3.php
+          php -l wordpress/plugins/onegodian-mega-menu-v3/includes/class-ogmm-v3-admin.php
+      - name: Smoke test upgrade and rollback using WordPress stubs
+        run: php scripts/test_mega_menu_v3.php
+      - name: JavaScript syntax check
+        run: node --check wordpress/plugins/onegodian-mega-menu-v3/assets/mega-menu-v3.js
