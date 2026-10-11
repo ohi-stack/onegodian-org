@@ -105,6 +105,21 @@ function ogmm_v3_link_markup($item, $kind = 'link') {
         . '<span class="ogmm-v3__link-arrow" aria-hidden="true">↗</span></a>';
 }
 
+/** Retain existing nested utility links outside the seven canonical primary areas. */
+function ogmm_v3_render_utility_children($parent_id, $children, $depth = 0, $visited = array()) {
+    if ($depth > 12 || isset($visited[$parent_id]) || empty($children[$parent_id])) {
+        return '';
+    }
+    $visited[$parent_id] = true;
+    $markup = '<ul class="ogmm-v3__utility-list">';
+    foreach ($children[$parent_id] as $item) {
+        $link = ogmm_v3_link_markup($item, 'utility-sub-link');
+        $nested = ogmm_v3_render_utility_children((int) $item->ID, $children, $depth + 1, $visited);
+        $markup .= '<li>' . ($link !== '' ? $link : '<span>' . esc_html((string) $item->title) . '</span>') . $nested . '</li>';
+    }
+    return $markup . '</ul>';
+}
+
 /**
  * Render real WordPress menu items, including pre-existing unrelated utility roots.
  * Never synthesize unverified links or silently discard overflow.
@@ -155,6 +170,9 @@ function ogmm_v3_render($menu_id) {
         $direct = $children[(int) $root->ID] ?? array();
         $columns = array();
         $quick = array();
+        if (ogmm_v3_valid_link((string) $root->url)) {
+            $quick[] = $root;
+        }
         // A child with descendants represents a semantic heading/column.
         foreach ($direct as $child) {
             $descendants = $children[(int) $child->ID] ?? array();
@@ -185,9 +203,11 @@ function ogmm_v3_render($menu_id) {
             }
         }
         if ($quick) {
+            $quick_columns = array();
             foreach (array_chunk($quick, 7) as $i => $chunk) {
-                array_unshift($columns, array('heading' => $i ? 'Quick links — continued' : 'Quick links', 'links' => $chunk));
+                $quick_columns[] = array('heading' => $i ? 'Quick links — continued' : 'Quick links', 'links' => $chunk);
             }
+            $columns = array_merge($quick_columns, $columns);
         }
         $count = count($columns);
         $panel_id = $id . '-panel-' . strtolower($area);
@@ -219,7 +239,17 @@ function ogmm_v3_render($menu_id) {
     if ($utilities) {
         $out .= '<div class="ogmm-v3__utilities" aria-label="Additional navigation">';
         foreach ($utilities as $utility) {
-            $out .= ogmm_v3_link_markup($utility, 'utility');
+            $nested = ogmm_v3_render_utility_children((int) $utility->ID, $children);
+            if ($nested !== '') {
+                $out .= '<details class="ogmm-v3__utility-menu"><summary>' . esc_html((string) $utility->title) . '</summary>';
+                $out .= '<div class="ogmm-v3__utility-popup">';
+                if (ogmm_v3_valid_link((string) $utility->url)) {
+                    $out .= ogmm_v3_link_markup($utility, 'utility-sub-link');
+                }
+                $out .= $nested . '</div></details>';
+            } else {
+                $out .= ogmm_v3_link_markup($utility, 'utility');
+            }
         }
         $out .= '</div>';
     }
