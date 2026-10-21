@@ -1,0 +1,84 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-21",
+  "canonical_site": "https://onegodian.org",
+  "staging_site": "https://2027.onegodian.org",
+  "status": "source-candidate-not-deployed",
+  "format": "WPBakery Page Builder/Visual Composer source",
+  "navigation": [
+    "ABOUT",
+    "IDENTITY",
+    "LEARN",
+    "TIME",
+    "COMMUNITY",
+    "ECOSYSTEM",
+    "SUPPORT"
+  ],
+  "site_design": "Obsidian #050507, gold #d8b35a, violet #6f3cff, ivory #f5f1e8",
+  "plugin_path": "wordpress/plugins/onegodian-premium-vc-pages/",
+  "pages": [
+    {
+      "slug": "about",
+      "navigation": "ABOUT",
+      "path": "/about/",
+      "h1": "The story starts with a name. The record shows what followed.",
+      "seo_title": "ABOUT | OneGodian.org",
+      "seo_description": "Discover OneGodian's founder, identity origin, historical chronology and source records.",
+      "vc_source": "wordpress/pages/premium-seven/about.vc.txt"
+    },
+    {
+      "slug": "identity",
+      "navigation": "IDENTITY",
+      "path": "/identity/",
+      "h1": "Identity is personal. Belonging begins with understanding.",
+      "seo_title": "IDENTITY | OneGodian.org",
+      "seo_description": "Explore OneGodian identity, the meaning of belonging to One God, voluntary belief reflection and membership choices.",
+      "vc_source": "wordpress/pages/premium-seven/identity.vc.txt"
+    },
+    {
+      "slug": "learn",
+      "navigation": "LEARN",
+      "path": "/learn/",
+      "h1": "Knowledge becomes useful when people can understand it.",
+      "seo_title": "LEARN | OneGodian.org",
+      "seo_description": "Begin OneGodian 101, discover foundational language and history, and continue to specialized University learning.",
+      "vc_source": "wordpress/pages/premium-seven/learn.vc.txt"
+    },
+    {
+      "slug": "time",
+      "navigation": "TIME",
+      "path": "/time/",
+      "h1": "Time is how a history is remembered and ordered.",
+      "seo_title": "TIME | OneGodian.org",
+      "seo_description": "Learn about OneGodian Time OTS-V5, cultural chronology, dated records and supplementary date conversion.",
+      "vc_source": "wordpress/pages/premium-seven/time.vc.txt"
+    },
+    {
+      "slug": "community",
+      "navigation": "COMMUNITY",
+      "path": "/community/",
+      "h1": "A community grows through what people learn and do together.",
+      "seo_title": "COMMUNITY | OneGodian.org",
+      "seo_description": "Explore OneGodian community, membership, participation, member resources, and practical contribution pathways.",
+      "vc_source": "wordpress/pages/premium-seven/community.vc.txt"
+    },
+    {
+      "slug": "ecosystem",
+      "navigation": "ECOSYSTEM",
+      "path": "/ecosystem/",
+      "h1": "The identity came first. The ecosystem followed.",
+      "seo_title": "ECOSYSTEM | OneGodian.org",
+      "seo_description": "Find the right OneGodian platform for public identity, education, commerce, technology research and specialized services.",
+      "vc_source": "wordpress/pages/premium-seven/ecosystem.vc.txt"
+    },
+    {
+      "slug": "support",
+      "navigation": "SUPPORT",
+      "path": "/support/",
+      "h1": "Help turn a documented body of work into lasting infrastructure.",
+      "seo_title": "SUPPORT | OneGodian.org",
+      "seo_description": "Contribute to OneGodian's development through voluntary support, location opportunities, professional services and partnerships.",
+      "vc_source": "wordpress/pages/premium-seven/support.vc.txt"
+    }
+  ]
+}
