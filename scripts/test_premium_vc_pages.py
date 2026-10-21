@@ -13,10 +13,10 @@ for p in manifest["pages"]:
     text = file.read_text()
     assert len(text) > 4500, file
     for name in ("vc_row", "vc_column", "vc_column_text"):
-        opens = len(re.findall(r"\\[" + name + r"(?:\\s|\\])", text))
+        opens = len(re.findall(r"\[" + name + r"(?:\s|\])", text))
         closes = text.count("[/" + name + "]")
         assert opens == closes, (file, name, opens, closes)
-    assert len(re.findall(r"<h1(?:\\s[^>]*)?>", text)) == 1, file
+    assert len(re.findall(r"<h1(?:\s[^>]*)?>", text)) == 1, file
     assert text.count("<h2 ") >= 4, file
     assert text.count('class="og7-card"') == 4, file
     assert text.count('class="og7-step"') == 3, file
