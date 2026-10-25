@@ -1,0 +1,121 @@
+{
+  "version": "1.2.0",
+  "updated": "2026-10-25",
+  "author_and_originator": "One Gregory Onegodian™",
+  "campaign": "OneGodian: Remember",
+  "environment": "2027 staging candidate",
+  "page_status": "source-committed-not-wordpress-imported",
+  "repo": "ohi-stack/onegodian-org",
+  "branch": "feat/premium-seven-vc-2026-10-21",
+  "page_source": "wordpress/pages/onegodian-remember.vc.txt",
+  "plugin": "wordpress/plugins/onegodian-premium-vc-pages/",
+  "stylesheet": "wordpress/plugins/onegodian-premium-vc-pages/assets/onegodian-remember.css",
+  "primary_page_slug": "unverified-existing-slug",
+  "stylesheet_detection": "plugin checks for ogrm-hero marker in WordPress page content",
+  "navigation": {
+    "primary": [
+      "ABOUT",
+      "IDENTITY",
+      "LEARN",
+      "TIME",
+      "COMMUNITY",
+      "ECOSYSTEM",
+      "SUPPORT"
+    ],
+    "placement": "contextual campaign page, not an additional eighth primary navigation item"
+  },
+  "wordpress_media": [
+    {
+      "id": 3906,
+      "role": "hero WPBakery parallax",
+      "verified": false
+    },
+    {
+      "id": 4978,
+      "role": "video background original URL",
+      "url": "https://onegodian.org/wp-content/uploads/2026/05/FA11C45F-C9B7-493C-BAAA-B291E8DCF376.png",
+      "verified": false
+    },
+    {
+      "id": 4784,
+      "role": "Remember the Conversation card",
+      "verified": false
+    },
+    {
+      "id": 4844,
+      "role": "Remember the Meaning card",
+      "verified": false
+    },
+    {
+      "id": 5009,
+      "role": "Remember the Mission card",
+      "verified": false
+    }
+  ],
+  "youtube": {
+    "url": "https://www.youtube.com/watch?v=NqwcX2yqOKs",
+    "embed_shortcode": "vc_video",
+    "live_playback_verified": false,
+    "captions_verified": false
+  },
+  "outbound_links": [
+    {
+      "url": "/contributors/",
+      "intent": "voluntary support",
+      "reviewed": false
+    },
+    {
+      "url": "https://onegodian.com/remember/",
+      "intent": "commercial product collection",
+      "reviewed": false
+    },
+    {
+      "url": "https://onegodian.org/product/contribution/",
+      "intent": "WordPress/WooCommerce contribution product",
+      "reviewed": false,
+      "comment": "Page was retrievable publicly; product flow, payment and receipts still require staging verification"
+    },
+    {
+      "url": "https://www.youtube.com/@iamOnegodian",
+      "intent": "OneGodian YouTube channel",
+      "reviewed": false
+    },
+    {
+      "url": "/contact/",
+      "intent": "contact",
+      "reviewed": false
+    },
+    {
+      "url": "/what-is-onegodian/",
+      "intent": "identity explainer",
+      "reviewed": false
+    },
+    {
+      "url": "/onegodian-101/",
+      "intent": "education",
+      "reviewed": false
+    },
+    {
+      "url": "/community/",
+      "intent": "community",
+      "reviewed": false
+    },
+    {
+      "url": "/history-legacy/",
+      "intent": "history",
+      "reviewed": false
+    }
+  ],
+  "runtime_requirements": [
+    "WordPress + compatible WPBakery shortcode renderer",
+    "Theme shortcode la_show_posts present or replace with native WordPress query block",
+    "Media Library attachments and alt text verified",
+    "YouTube privacy, captions and responsive playback verified",
+    "OneGodian Premium VC Pages 1.2.0 plugin installed and active in staging",
+    "Footer, navigation, conversion actions and mobile interactions verified",
+    "Contribution form/product payment flow verified end-to-end without misleading donation/investment descriptions",
+    "Page screenshots at 320, 375, 768, 1024, 1440 pixels",
+    "Human approval plus rollback backup before publication"
+  ],
+  "release_approval": "pending"
+}
