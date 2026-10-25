@@ -1,0 +1,182 @@
+<!-- OneGodian.org • What Is OneGodian? • WPBakery 2027 source v1.1.0 -->
+<!-- Requires OneGodian Premium VC Pages companion plugin v1.1.0 stylesheet. -->
+<!-- Preserve the existing WordPress Media Library hero background ID 3906. -->
+<!-- Main content: one H1, seven H2s; Home and seven primary-area root pages remain separate. -->
+[vc_row full_width="stretch_row_content" parallax="content-moving" parallax_image="3906" el_id="what-is-onegodian" el_class="ogwhy ogwhy-hero"][vc_column][vc_column_text]
+<div class="ogwhy-wrap ogwhy-hero-inner">
+  <span class="ogwhy-eyebrow">ONEGODIAN™ <span aria-hidden="true">/</span> ONE GOD <span aria-hidden="true">/</span> IDENTITY <span aria-hidden="true">/</span> FOUNDATION</span>
+  <p class="ogwhy-kicker">One word. One foundational meaning.</p>
+  <h1>What Is OneGodian™?</h1>
+  <p class="ogwhy-tagline">Related to, resembling, and belonging to One God.</p>
+  <p class="ogwhy-lead">OneGodian is a religious, philosophical, identity, educational, and community framework centered on <strong>One God, divine unity, human dignity, purpose, truth, conscience, learning, responsibility, and service.</strong></p>
+  <p class="ogwhy-sublead">The identity came first. The writings, organizations, community, businesses, technologies, and platforms developed afterward as expressions of that foundation.</p>
+  <div class="ogwhy-question" aria-label="The foundational question">
+    <span>The foundational question</span>
+    <p>“If we belong to One God, why did nobody call us OneGodian?”</p>
+  </div>
+  <nav class="ogwhy-actions" aria-label="Introduction actions">
+    <a class="ogwhy-button ogwhy-button-primary" href="/onegodian-origin/">Read the Origin Story <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-outline" href="/founder/">Meet the Founder <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-outline" href="/onegodian-101/">Begin OneGodian 101 <span aria-hidden="true">↗</span></a>
+  </nav>
+</div>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-light"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-definition-title">
+  <div class="ogwhy-intro">
+    <span class="ogwhy-label">MEANING / LANGUAGE / IDENTITY</span>
+    <h2 id="ogwhy-definition-title">The meaning is in the word.</h2>
+    <p>OneGodian was developed to name an identity in relationship to One God. Its definition has three connected parts.</p>
+  </div>
+  <div class="ogwhy-grid ogwhy-grid-three">
+    <article class="ogwhy-card ogwhy-card-dark">
+      <span class="ogwhy-index">01 / RELATIONSHIP</span>
+      <h3>Related To</h3>
+      <p>OneGodian begins with relationship to One God: the recognition of a divine source greater than the individual and the institutions people create.</p>
+    </article>
+    <article class="ogwhy-card ogwhy-card-dark ogwhy-card-purple">
+      <span class="ogwhy-index">02 / REFLECTION</span>
+      <h3>Resembling</h3>
+      <p>Resembling One God does not mean becoming God. It means striving to reflect goodness through conscience, truth, compassion, justice, wisdom, creativity, and service.</p>
+    </article>
+    <article class="ogwhy-card ogwhy-card-dark ogwhy-card-teal">
+      <span class="ogwhy-index">03 / BELONGING</span>
+      <h3>Belonging To</h3>
+      <p>Belonging expresses spiritual identity and responsibility toward God, ourselves, other people, future generations, and the world around us.</p>
+    </article>
+  </div>
+  <p class="ogwhy-footnote">The definition expresses a religious and philosophical understanding; it does not automatically enroll anyone in an organization or determine another person’s beliefs.</p>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-midnight"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-origin-title">
+  <div class="ogwhy-intro">
+    <span class="ogwhy-label">ORIGIN / THEOLOGY / LANGUAGE</span>
+    <h2 id="ogwhy-origin-title">Why was the word created?</h2>
+    <p>According to founder One Gregory OneGodian™, the search began with theology and language—not with a company, website, membership product, or technology.</p>
+  </div>
+  <div class="ogwhy-grid ogwhy-grid-two">
+    <article class="ogwhy-card ogwhy-card-glass">
+      <span class="ogwhy-index">THE SEARCH</span>
+      <h3>Finding the right identity word</h3>
+      <p>Gregory studied the idea of One God and considered different word forms, including “Onegodeism,” before arriving at “OneGodian” as the expression of relationship, resemblance, and belonging.</p>
+      <p>The foundational question was direct: if people belong to One God, what identity word describes that relationship?</p>
+    </article>
+    <article class="ogwhy-card ogwhy-card-glass">
+      <span class="ogwhy-index">SCRIPTURAL CONTEXT</span>
+      <h3>One God as the theological center</h3>
+      <p><strong>Ephesians 4:4–6</strong> speaks of one body, Spirit, hope, Lord, faith, baptism, and one God and Father of all. <strong>Mark 10:17–18</strong> directs attention to God as the ultimate source of goodness.</p>
+      <p>These passages informed Gregory’s interpretation; OneGodian is his developed identity term, not a word quoted from either passage.</p>
+    </article>
+  </div>
+  <div class="ogwhy-statement">
+    <strong>The chronology matters.</strong>
+    <p>The identity and original writings came before the websites, books, educational programs, memberships, businesses, registries, and technology platforms. The original authorship record and subsequent developments should be presented distinctly and supported by evidence.</p>
+  </div>
+  <div class="ogwhy-actions ogwhy-actions-center">
+    <a class="ogwhy-button ogwhy-button-primary" href="/onegodian-origin/">Explore the Full Origin <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-outline" href="/history-legacy/">View History &amp; Legacy <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-navy"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-values-title">
+  <div class="ogwhy-intro">
+    <span class="ogwhy-label">FOUNDATION / VALUES / PRACTICE</span>
+    <h2 id="ogwhy-values-title">What does OneGodian emphasize?</h2>
+    <p>The name invites personal reflection and practical expression through character, learning, relationships, and constructive action.</p>
+  </div>
+  <div class="ogwhy-grid ogwhy-grid-four">
+    <article class="ogwhy-card ogwhy-card-glass"><span class="ogwhy-index">ONE GOD</span><h3>Divine Unity</h3><p>Recognizing One God as the theological center of the identity.</p></article>
+    <article class="ogwhy-card ogwhy-card-glass"><span class="ogwhy-index">HUMANITY</span><h3>Human Dignity</h3><p>Treating people with conscience, fairness, respect, and care.</p></article>
+    <article class="ogwhy-card ogwhy-card-glass"><span class="ogwhy-index">PURPOSE</span><h3>Responsibility</h3><p>Taking responsibility for choices, family, conduct, growth, and work.</p></article>
+    <article class="ogwhy-card ogwhy-card-glass"><span class="ogwhy-index">ACTION</span><h3>Service</h3><p>Giving belief practical expression through learning, community, and stewardship.</p></article>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-light"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-distinction-title">
+  <div class="ogwhy-intro">
+    <span class="ogwhy-label">FOUNDATION / LATER EXPRESSIONS</span>
+    <h2 id="ogwhy-distinction-title">Identity first. Ecosystem afterward.</h2>
+    <p>The growing number of OneGodian projects does not change what the word originally means.</p>
+  </div>
+  <div class="ogwhy-grid ogwhy-grid-two">
+    <article class="ogwhy-card ogwhy-card-dark">
+      <span class="ogwhy-index">THE FOUNDATION</span>
+      <h3>OneGodian Identity</h3>
+      <p>One God, divine unity, belonging, conscience, human dignity, truth, learning, responsibility, purpose, and service.</p>
+      <a class="ogwhy-text-link" href="/identity/">Explore Identity <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="ogwhy-card ogwhy-card-dark ogwhy-card-purple">
+      <span class="ogwhy-index">THE LATER WORK</span>
+      <h3>The OneGodian Ecosystem</h3>
+      <p>Books, publications, courses, media, community programs, software, registries, research, digital commerce, technology, and infrastructure development.</p>
+      <a class="ogwhy-text-link" href="/ecosystem/">Explore the Ecosystem <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+  <div class="ogwhy-clarity">
+    <strong>Organizational clarity:</strong> ONEGODIAN, LLC is the Connecticut-based private commercial and intellectual-property entity. The Indigenous Nation of Onegodia has its own spiritual, community, and internal-governance context. Neither organization is identical to the underlying OneGodian identity, and this explanation does not imply governmental recognition.
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-remembrance"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-remember-title">
+  <div class="ogwhy-remembrance-panel">
+    <span class="ogwhy-label">REMEMBER / IDENTITY / PURPOSE</span>
+    <h2 id="ogwhy-remember-title">Remember who you are.</h2>
+    <p class="ogwhy-remembrance-verse">Remember Your Family.<br>Remember Your Purpose.<br>Remember the Light.</p>
+    <p>The purpose is more than adopting a label. It is reflecting on faith, character, family, personal history, learning, responsibility, and what each person contributes to others.</p>
+    <a class="ogwhy-button ogwhy-button-primary" href="/remember-who-you-are/">Explore Remember Who You Are <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-navy"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-learning-title">
+  <div class="ogwhy-intro">
+    <span class="ogwhy-label">START HERE / KEEP EXPLORING</span>
+    <h2 id="ogwhy-learning-title">Understand the foundation before the systems.</h2>
+    <p>You do not need to learn the entire ecosystem at once. Begin with the meaning, the origin, and the history; then choose how you want to participate.</p>
+  </div>
+  <div class="ogwhy-grid ogwhy-grid-three">
+    <article class="ogwhy-card ogwhy-card-glass">
+      <span class="ogwhy-index">01 / BEGIN</span><h3>OneGodian 101™</h3>
+      <p>Study the identity, its definition, the origin account, and the framework’s foundational language.</p>
+      <a class="ogwhy-text-link" href="/onegodian-101/">Start Learning <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="ogwhy-card ogwhy-card-glass">
+      <span class="ogwhy-index">02 / EXPLORE</span><h3>History &amp; Legacy</h3>
+      <p>Review the founder chronology, original records, major milestones, documents, and archival material.</p>
+      <a class="ogwhy-text-link" href="/history-legacy/">Explore the History <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="ogwhy-card ogwhy-card-glass">
+      <span class="ogwhy-index">03 / PARTICIPATE</span><h3>Community &amp; Membership</h3>
+      <p>Learn about voluntary membership, public participation, allies, education, and contribution opportunities.</p>
+      <a class="ogwhy-text-link" href="/membership/">Explore Membership <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogwhy ogwhy-final"][vc_column][vc_column_text]
+<section class="ogwhy-wrap ogwhy-pad" aria-labelledby="ogwhy-final-title">
+  <span class="ogwhy-label">ONE GOD / IDENTITY / PURPOSE</span>
+  <h2 id="ogwhy-final-title">The identity came first.</h2>
+  <p>Before the organizations, platforms, books, memberships, and systems, there was a question about faith, language, and belonging.</p>
+  <p class="ogwhy-final-quote">“If we belong to One God, why did nobody call us OneGodian?”</p>
+  <p class="ogwhy-final-definition">Related to. Resembling. Belonging to One God.</p>
+  <nav class="ogwhy-actions ogwhy-actions-center" aria-label="Next steps">
+    <a class="ogwhy-button ogwhy-button-outline" href="/start-here/">Start Here <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-outline" href="/onegodian-101/">OneGodian 101 <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-outline" href="/membership/">Membership <span aria-hidden="true">↗</span></a>
+    <a class="ogwhy-button ogwhy-button-primary" href="/community/">Join the Conversation <span aria-hidden="true">↗</span></a>
+  </nav>
+  <p class="ogwhy-copyright">OneGodian™ foundational identity and origin developed by One Gregory OneGodian™. Historical authorship and organizational claims should be evaluated using their underlying records. This informational page does not automatically confer membership, citizenship, legal status, or religious affiliation.</p>
+</section>
+[/vc_column_text][/vc_column][/vc_row]

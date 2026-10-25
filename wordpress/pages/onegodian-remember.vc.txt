@@ -1,0 +1,155 @@
+<!-- ONEGODIAN, LLC | OneGodian: Remember | 2027 WPBakery campaign page v1.2.0 -->
+<!-- Author and originator: One Gregory Onegodian™ -->
+<!-- Companion plugin: OneGodian Premium VC Pages v1.2.0 or later -->
+<!-- Media dependencies: WordPress IDs 3906 (hero), 4978 (video backdrop), 4784, 4844, 5009; verify attachment metadata and usage rights in staging. -->
+<!-- Existing YouTube source retained as supplied. -->
+<!-- Publishing rule: review page destinations and installed theme's la_show_posts/la_btn shortcodes before launch. -->
+
+[vc_row full_width="stretch_row_content" parallax="content-moving" parallax_image="3906" el_id="onegodian-remember" el_class="ogrm ogrm-hero"][vc_column][vc_column_text]
+<section class="ogrm-wrap ogrm-hero-content" aria-labelledby="ogrm-title">
+  <span class="ogrm-pill">ONEGODIAN™ • REMEMBER CAMPAIGN • IDENTITY • PURPOSE • SUPPORT</span>
+  <p class="ogrm-eyebrow">A MESSAGE WORTH REMEMBERING</p>
+  <h1 id="ogrm-title">OneGodian: <span>Remember.</span></h1>
+  <p class="ogrm-hero-line">Remember who you are. Remember where you come from. Remember your purpose.</p>
+  <p class="ogrm-hero-description">The OneGodian: Remember Campaign invites people to reconnect with identity, family, human dignity, purpose, and the foundation of <strong>One God</strong>—and to remember how a conversation, business card, product, video, or message first introduced them to OneGodian.</p>
+  <div class="ogrm-actionbar">
+    <a class="ogrm-button ogrm-button-gold" href="/contributors/">Support the Remember Campaign <span aria-hidden="true">↗</span></a>
+    <a class="ogrm-button ogrm-button-outline" href="https://onegodian.com/remember/" target="_blank" rel="noopener noreferrer">Explore Remember Products <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="ogrm-grid ogrm-grid-three ogrm-hero-points">
+    <article class="ogrm-feature-card"><span class="ogrm-num">01 / MEMORY</span><h2>Remember the Encounter</h2><p>The conversation, card, link, or public message that brought OneGodian into your life.</p></article>
+    <article class="ogrm-feature-card"><span class="ogrm-num">02 / SUPPORT</span><h2>Support the Growth</h2><p>Help strengthen public education, media, outreach, and practical development through voluntary action.</p></article>
+    <article class="ogrm-feature-card"><span class="ogrm-num">03 / PURPOSE</span><h2>Carry the Mission</h2><p>Put dignity, conscience, learning, unity, and service into practice in your own community.</p></article>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-light"][vc_column][vc_column_text]
+<section class="ogrm-wrap ogrm-pad" aria-labelledby="ogrm-meaning-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">THE MESSAGE / THE MEANING</span>
+    <h2 id="ogrm-meaning-title">Remember the message behind the name.</h2>
+    <p>OneGodian means <strong>related to, resembling, and belonging to One God.</strong> The Remember Campaign carries that foundational identity into public conversations, media, education, and everyday life.</p>
+  </div>
+  <div class="ogrm-quote">
+    <p>“If we belong to One God, why did nobody call us OneGodian?”</p>
+    <span>THE FOUNDATIONAL QUESTION</span>
+  </div>
+  <div class="ogrm-split">
+    <div>
+      <h3>More than recognition.</h3>
+      <p>The campaign asks people to remember their family, their values, their purpose, and the people they can help. It does not ask anyone to abandon their conscience or surrender their identity to a website, product, or institution.</p>
+    </div>
+    <div>
+      <h3>Identity before the ecosystem.</h3>
+      <p>The OneGodian identity came before the later books, businesses, community initiatives, memberships, and technologies. This campaign connects that original meaning with ways to learn, participate, and support ongoing work.</p>
+    </div>
+  </div>
+  <div class="ogrm-actionbar ogrm-actionbar-center">
+    <a class="ogrm-button ogrm-button-navy" href="/what-is-onegodian/">What Is OneGodian? <span aria-hidden="true">↗</span></a>
+    <a class="ogrm-button ogrm-button-ghost" href="/onegodian-101/">Explore OneGodian 101 <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-video" el_id="remember-video"][vc_column][vc_column_text]
+<div class="ogrm-wrap ogrm-pad-top" aria-labelledby="ogrm-video-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">WATCH / REMEMBER / SHARE</span>
+    <h2 id="ogrm-video-title">Watch the Remember message.</h2>
+    <p>Experience the campaign through its featured video. After watching, share the page with someone who might connect with its message of identity and purpose.</p>
+  </div>
+</div>
+[/vc_column_text][vc_row_inner el_class="ogrm-video-row"][vc_column_inner width="1/6"][/vc_column_inner][vc_column_inner width="2/3"][vc_video link="https://www.youtube.com/watch?v=NqwcX2yqOKs" el_class="ogrm-feature-video"][/vc_column_inner][vc_column_inner width="1/6"][/vc_column_inner][/vc_row_inner][vc_column_text]
+<div class="ogrm-wrap ogrm-pad-bottom">
+<p class="ogrm-media-note">The embedded YouTube video is provided by an external service. Verify its availability, captions, privacy settings, and mobile playback before publishing. <a href="https://www.youtube.com/watch?v=NqwcX2yqOKs" target="_blank" rel="noopener noreferrer">Watch directly on YouTube <span aria-hidden="true">↗</span></a></p>
+</div>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-navy"][vc_column][vc_column_text]
+<div class="ogrm-wrap ogrm-pad-top" aria-labelledby="ogrm-story-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">A CONVERSATION / AN IDENTITY / A MISSION</span>
+    <h2 id="ogrm-story-title">Three things worth remembering.</h2>
+    <p>People may discover OneGodian in different ways. The campaign brings those encounters back to a shared message.</p>
+  </div>
+</div>
+[/vc_column_text][vc_row_inner equal_height="yes" el_class="ogrm-story-grid"][vc_column_inner width="1/3" el_class="ogrm-story-col"][vc_single_image image="4784" img_size="large" alignment="center" el_class="ogrm-story-photo"][vc_column_text]
+<div class="ogrm-story-copy"><span class="ogrm-num">01 / THE ENCOUNTER</span><h3>Remember the Conversation</h3><p>Perhaps you met Gregory “One” in person, received a business card, watched a video, or saw a post. Remember the message you encountered, not just the moment.</p></div>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" el_class="ogrm-story-col"][vc_single_image image="4844" img_size="large" alignment="center" el_class="ogrm-story-photo"][vc_column_text]
+<div class="ogrm-story-copy"><span class="ogrm-num">02 / THE IDENTITY</span><h3>Remember the Meaning</h3><p>One God. Relationship. Resemblance. Belonging. Human dignity, conscience, responsibility, and purpose are at the heart of the identity.</p></div>
+[/vc_column_text][/vc_column_inner][vc_column_inner width="1/3" el_class="ogrm-story-col"][vc_single_image image="5009" img_size="large" alignment="center" el_class="ogrm-story-photo"][vc_column_text]
+<div class="ogrm-story-copy"><span class="ogrm-num">03 / THE WORK</span><h3>Remember the Mission</h3><p>Help strengthen educational materials, public resources, media, community engagement, and long-term OneGodian infrastructure.</p></div>
+[/vc_column_text][/vc_column_inner][/vc_row_inner][vc_column_text]
+<div class="ogrm-wrap ogrm-pad-bottom">
+<p class="ogrm-footnote">Media Library attachment IDs 4784, 4844, and 5009 are preserved from the prior page; confirm the correct images, alt text, and mobile crops on staging.</p>
+</div>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-light" el_id="remember-actions"][vc_column][vc_column_text]
+<section class="ogrm-wrap ogrm-pad" aria-labelledby="ogrm-support-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">SUBSCRIBE / PURCHASE / CONTRIBUTE / SHARE</span>
+    <h2 id="ogrm-support-title">Four practical ways to support.</h2>
+    <p>Choose the level of participation that makes sense for you. Sharing the message is valuable, and financial support is always optional.</p>
+  </div>
+  <div class="ogrm-grid ogrm-grid-four">
+    <article class="ogrm-action-card"><span class="ogrm-action-symbol" aria-hidden="true">▶</span><span class="ogrm-num">01 / FOLLOW</span><h3>Subscribe</h3><p>Follow the OneGodian channel to discover new videos, conversations, and educational releases.</p><a href="https://www.youtube.com/@iamOnegodian" target="_blank" rel="noopener noreferrer">Visit YouTube <span aria-hidden="true">↗</span></a></article>
+    <article class="ogrm-action-card"><span class="ogrm-action-symbol" aria-hidden="true">▣</span><span class="ogrm-num">02 / SHOP</span><h3>Buy Remember Products</h3><p>Explore Remember-branded products and other items offered through OneGodian's commercial storefront.</p><a href="https://onegodian.com/remember/" target="_blank" rel="noopener noreferrer">Shop the Collection <span aria-hidden="true">↗</span></a></article>
+    <article class="ogrm-action-card"><span class="ogrm-action-symbol" aria-hidden="true">✦</span><span class="ogrm-num">03 / CONTRIBUTE</span><h3>Make a Contribution</h3><p>Voluntary support can assist public information, creative production, outreach, and technology development.</p><a href="https://onegodian.org/product/contribution/">View Contribution Details <span aria-hidden="true">↗</span></a></article>
+    <article class="ogrm-action-card"><span class="ogrm-action-symbol" aria-hidden="true">↗</span><span class="ogrm-num">04 / SHARE</span><h3>Spread the Message</h3><p>Tell someone about OneGodian, share the website, or continue a conversation started in your community.</p><a href="/community/">Explore Community <span aria-hidden="true">↗</span></a></article>
+  </div>
+  <div class="ogrm-actionbar ogrm-actionbar-center">
+    <a class="ogrm-button ogrm-button-navy" href="/contributors/">Other Ways to Contribute <span aria-hidden="true">↗</span></a>
+    <a class="ogrm-button ogrm-button-ghost" href="/contact/">Contact OneGodian <span aria-hidden="true">↗</span></a>
+  </div>
+  <p class="ogrm-support-disclosure"><strong>Commercial support disclosure:</strong> ONEGODIAN, LLC is a Connecticut limited liability company. Purchases and voluntary contributions are not presented as tax-deductible charitable donations, investments, equity purchases, or entitlements to financial returns. Read the applicable product, contribution, refund, and fulfillment terms before paying.</p>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-phrases"][vc_column][vc_column_text]
+<section class="ogrm-wrap ogrm-pad" aria-labelledby="ogrm-phrases-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">WORDS TO CARRY FORWARD</span>
+    <h2 id="ogrm-phrases-title">Remember Campaign phrases.</h2>
+    <p>Small messages meant to spark reflection, conversation, and purpose.</p>
+  </div>
+  <div class="ogrm-phrase-grid">
+    <p>Remember who you are.</p>
+    <p>Remember where you come from.</p>
+    <p>Remember One God.</p>
+    <p>Remember your purpose.</p>
+    <p>Remember your family.</p>
+    <p>Remember the light.</p>
+    <p>You are not lost. You are remembering.</p>
+    <p>The future begins when the people remember.</p>
+  </div>
+  <p class="ogrm-campaign-line">I'm Onegodian, you Onegodian, all around the world, we Onegodian.</p>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-navy"][vc_column][vc_column_text]
+<div class="ogrm-wrap ogrm-pad-top" aria-labelledby="ogrm-updates-title">
+  <div class="ogrm-heading">
+    <span class="ogrm-eyebrow">STORIES / PUBLICATIONS / UPDATES</span>
+    <h2 id="ogrm-updates-title">Continue the conversation.</h2>
+    <p>Explore recent writing and public updates from OneGodian. The posts below are the site's latest posts, not a verified Remember-only feed.</p>
+  </div>
+</div>
+[/vc_column_text][la_show_posts grid_style="2" orderby="date" order="DESC" excerpt_length="20" item_space="10" enable_carousel="no" per_page="6" column="xlg:3;lg:3;md:2;sm:2;xs:1;mb:1;"][vc_column_text]
+<div class="ogrm-actionbar ogrm-actionbar-center"><a class="ogrm-button ogrm-button-outline" href="/history-legacy/">Explore the OneGodian Story <span aria-hidden="true">↗</span></a></div>
+[/vc_column_text][/vc_column][/vc_row]
+
+[vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-final"][vc_column][vc_column_text]
+<section class="ogrm-wrap ogrm-pad ogrm-final-inner" aria-labelledby="ogrm-final-title">
+  <span class="ogrm-pill">REMEMBER • SUPPORT • HELP BUILD</span>
+  <h2 id="ogrm-final-title">The encounter may have been brief.<br><span>The message can last.</span></h2>
+  <p>Whether you arrived through a business card, conversation, video, product, or search, remember the message and decide what it means in your own life.</p>
+  <p class="ogrm-final-strong">Remember who you are. Remember your family. Remember your purpose. Remember the light.</p>
+  <div class="ogrm-actionbar ogrm-actionbar-center">
+    <a class="ogrm-button ogrm-button-gold" href="/contributors/">Support the Campaign <span aria-hidden="true">↗</span></a>
+    <a class="ogrm-button ogrm-button-outline" href="/contact/">Contact OneGodian <span aria-hidden="true">↗</span></a>
+  </div>
+  <p class="ogrm-last-note">OneGodian: Remember is a public educational, cultural, identity, and promotional campaign. Participation is voluntary and does not confer membership, citizenship, governmental status, or guaranteed personal or financial outcomes. One Gregory OneGodian™ is the author and originator of the OneGodian identity and Remember Campaign content.</p>
+</section>
+[/vc_column_text][/vc_column][/vc_row]
