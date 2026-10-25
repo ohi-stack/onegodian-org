@@ -102,3 +102,17 @@
 @media(max-width:800px){.ogrm .ogrm-grid-three{grid-template-columns:1fr}.ogrm .ogrm-split{grid-template-columns:1fr}.ogrm .ogrm-story-grid>.vc_column_inner{width:100%!important;margin-bottom:18px!important}.ogrm .ogrm-video-row>.vc_column_inner{width:100%!important}.ogrm .ogrm-video-row>.vc_column_inner:first-child,.ogrm .ogrm-video-row>.vc_column_inner:last-child{display:none}}
 @media(max-width:640px){.ogrm .ogrm-grid-four,.ogrm .ogrm-phrase-grid{grid-template-columns:1fr}.ogrm .ogrm-actionbar{flex-direction:column;align-items:stretch}.ogrm .ogrm-button{width:100%}.ogrm-hero .ogrm-hero-content{padding-top:82px;padding-bottom:70px}.ogrm .ogrm-hero-points{margin-top:38px}.ogrm .ogrm-phrase-grid p{min-height:70px}.ogrm .ogrm-pill{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.ogrm *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.ogrm .ogrm-button:hover{transform:none}.ogrm-hero .vc_parallax-inner{transform:none!important}}
+
+/* WPBakery inner rows use floated thirds by default; grid avoids gaps causing overflow. */
+.ogrm .ogrm-story-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ogrm .ogrm-story-grid>.ogrm-story-col{float:none!important;width:auto!important;max-width:none!important;margin:0!important}
+.ogrm .ogrm-story-grid::before,.ogrm .ogrm-story-grid::after{display:none!important}
+.ogrm .ogrm-video-row{display:grid!important;grid-template-columns:1fr minmax(0,4fr) 1fr;align-items:center;gap:0}
+.ogrm .ogrm-video-row>.vc_column_inner{float:none!important;width:auto!important;max-width:none!important}
+.ogrm .ogrm-video-row::before,.ogrm .ogrm-video-row::after{display:none!important}
+@media(max-width:800px){
+  .ogrm .ogrm-story-grid{grid-template-columns:1fr}
+  .ogrm .ogrm-video-row{grid-template-columns:1fr;padding-left:20px!important;padding-right:20px!important}
+  .ogrm .ogrm-video-row>.vc_column_inner:first-child,
+  .ogrm .ogrm-video-row>.vc_column_inner:last-child{display:none!important}
+}
