@@ -4,19 +4,23 @@ on:
     paths:
       - 'wordpress/pages/premium-seven/**'
       - 'wordpress/pages/what-is-onegodian.vc.txt'
+      - 'wordpress/pages/onegodian-remember.vc.txt'
       - 'wordpress/plugins/onegodian-premium-vc-pages/**'
       - 'config/premium-seven-pages.json'
       - 'scripts/test_premium_vc_pages.py'
       - 'scripts/test_what_is_onegodian_vc.py'
+      - 'scripts/test_onegodian_remember_vc.py'
       - '.github/workflows/premium-seven-vc.yml'
   pull_request:
     paths:
       - 'wordpress/pages/premium-seven/**'
       - 'wordpress/pages/what-is-onegodian.vc.txt'
+      - 'wordpress/pages/onegodian-remember.vc.txt'
       - 'wordpress/plugins/onegodian-premium-vc-pages/**'
       - 'config/premium-seven-pages.json'
       - 'scripts/test_premium_vc_pages.py'
       - 'scripts/test_what_is_onegodian_vc.py'
+      - 'scripts/test_onegodian_remember_vc.py'
       - '.github/workflows/premium-seven-vc.yml'
 jobs:
   source-checks:
@@ -30,6 +34,8 @@ jobs:
         run: python3 scripts/test_premium_vc_pages.py
       - name: Verify What Is OneGodian WPBakery source contract
         run: python3 scripts/test_what_is_onegodian_vc.py
+      - name: Verify OneGodian Remember WPBakery source contract
+        run: python3 scripts/test_onegodian_remember_vc.py
       - name: Lint scoped styles plugin
         run: php -l wordpress/plugins/onegodian-premium-vc-pages/onegodian-premium-vc-pages.php
       - name: Package styling plugin for staged WordPress installation
