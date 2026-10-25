@@ -83,6 +83,7 @@
 [/vc_column_text][/vc_column_inner][/vc_row_inner][vc_column_text]
 <div class="ogrm-wrap ogrm-pad-bottom">
 <p class="ogrm-footnote">Media Library attachment IDs 4784, 4844, and 5009 are preserved from the prior page; confirm the correct images, alt text, and mobile crops on staging.</p>
+</div>
 [/vc_column_text][/vc_column][/vc_row]
 
 [vc_row full_width="stretch_row_content" el_class="ogrm ogrm-section-light" el_id="remember-actions"][vc_column][vc_column_text]
