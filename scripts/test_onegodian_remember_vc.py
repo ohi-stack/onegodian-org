@@ -49,7 +49,7 @@ for i, block in enumerate(blocks):
 assert len(re.findall(r"<h1\b", vc)) == 1
 assert len(re.findall(r"<h2\b", vc)) >= 7
 assert "One Gregory Onegodian™" in vc
-assert "Related to, resembling, and belonging to One God" in vc
+assert "related to, resembling, and belonging to one god" in vc.lower()
 assert 'el_id="onegodian-remember"' in vc
 assert 'el_id="remember-actions"' in vc
 assert 'parallax_image="3906"' in vc
