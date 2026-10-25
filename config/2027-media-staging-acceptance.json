@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0.0",
+  "release": "2027-staging-candidate",
+  "status": "media-planning-no-upload-or-embed-verified",
+  "staging": "https://2027.onegodian.org",
+  "production": "https://onegodian.org",
+  "media_requirements": {
+    "images": "Use original/licensed WebP or AVIF; responsive srcset; descriptive alt; 16:9 hero and 1:1 supporting crops; never treat generated concept images as documentary photographs.",
+    "videos": "Use consent-cleared original video; captions VTT, transcript, poster, privacy-aware click-to-load embed; avoid autoplay and inaccessible motion.",
+    "performance": "Reserve image dimensions, lazy-load below-fold media, do not lazy-load LCP hero; require mobile layout and reduced-motion pass."
+  },
+  "pages": [
+    {
+      "slug": "about",
+      "wordpress_path": "/about/",
+      "source": "wordpress/pages/premium-seven/about.vc.txt",
+      "hero_image": {
+        "brief": "Founder portrait and documented origin",
+        "alt": "Founder's portrait and origin timeline",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "Founder introduction: why OneGodian was named; recorded chronology",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "start-here",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "identity",
+      "wordpress_path": "/identity/",
+      "source": "wordpress/pages/premium-seven/identity.vc.txt",
+      "hero_image": {
+        "brief": "People and community portrait, inclusive and natural",
+        "alt": "People discussing identity and belonging",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "What OneGodian means: related to, resembling, and belonging to One God",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "join",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "learn",
+      "wordpress_path": "/learn/",
+      "source": "wordpress/pages/premium-seven/learn.vc.txt",
+      "hero_image": {
+        "brief": "Workshop or classroom in progress",
+        "alt": "Instructor and learners in a workshop",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "OneGodian 101: foundational language and practical learning",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "learn",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "time",
+      "wordpress_path": "/time/",
+      "source": "wordpress/pages/premium-seven/time.vc.txt",
+      "hero_image": {
+        "brief": "Calendar close-up and chronological timeline",
+        "alt": "OneGodian calendar and historical timeline",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "How OneGodian Time works, with verifiable date examples",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "time",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "community",
+      "wordpress_path": "/community/",
+      "source": "wordpress/pages/premium-seven/community.vc.txt",
+      "hero_image": {
+        "brief": "Authentic local group gathering and outreach",
+        "alt": "Community members in discussion",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "Participate: membership, partnerships, volunteer and ally pathways",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "community",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "ecosystem",
+      "wordpress_path": "/ecosystem/",
+      "source": "wordpress/pages/premium-seven/ecosystem.vc.txt",
+      "hero_image": {
+        "brief": "Product and technology workspace with interface screenshots",
+        "alt": "Connected ecosystem products and technology",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "The OneGodian ecosystem: identity first, distinct platforms and their roles",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "ecosystem",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    },
+    {
+      "slug": "support",
+      "wordpress_path": "/support/",
+      "source": "wordpress/pages/premium-seven/support.vc.txt",
+      "hero_image": {
+        "brief": "Realistic Connecticut office/community space",
+        "alt": "Possible physical office and outreach space",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "Help establish the first operational location and support measurable work",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "support",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      }
+    }
+  ],
+  "plugins": [
+    {
+      "name": "WPBakery Page Builder",
+      "purpose": "Render vc shortcodes",
+      "status": "staging-activation-unverified"
+    },
+    {
+      "name": "OneGodian Premium VC Pages",
+      "purpose": "Scoped seven-page CSS",
+      "path": "wordpress/plugins/onegodian-premium-vc-pages/",
+      "status": "source-only"
+    },
+    {
+      "name": "OneGodian Members",
+      "purpose": "Authentication, membership, protected routes",
+      "status": "integration-and-version-unverified"
+    },
+    {
+      "name": "SEO plugin",
+      "purpose": "Canonical, meta description, sitemap",
+      "status": "active-plugin-unverified"
+    },
+    {
+      "name": "Forms Bridge",
+      "purpose": "Contact/contributor intake with submission storage and spam protection",
+      "status": "integration-unverified"
+    }
+  ],
+  "navigation": {
+    "primary": [
+      "ABOUT",
+      "IDENTITY",
+      "LEARN",
+      "TIME",
+      "COMMUNITY",
+      "ECOSYSTEM",
+      "SUPPORT"
+    ],
+    "persistent_actions": [
+      "START HERE",
+      "JOIN",
+      "CONTRIBUTE"
+    ],
+    "home_separate": true,
+    "menu_pr": 11,
+    "require_no_retired_domains": [
+      "capital.onegodian.com",
+      "app.onegodian.com"
+    ],
+    "note": "Never activate a menu link until its destination is checked and permission-safe."
+  },
+  "release_gates": [
+    "WordPress backup and restore evidence",
+    "Seven page IDs and WPBakery rendered pages",
+    "All hero media licensed, uploaded, and alt text reviewed",
+    "Videos have posters, captions, transcripts and playable embeds",
+    "Installed plugin versions, compatibility and staging smoke tests captured",
+    "Seven navigation links, dropdown keyboard use and persistent actions verified",
+    "Logged-out and logged-in member boundary tests",
+    "Core Web Vitals and accessibility smoke tests on mobile",
+    "SEO titles, canonical URLs, redirects, sitemap checked",
+    "Contact/contribution forms and notifications tested without payment claims",
+    "2027 staging screenshot evidence at 320/375/768/1024/1440",
+    "Human approval, production backup, controlled release and rollback"
+  ]
+}
