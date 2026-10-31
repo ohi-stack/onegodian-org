@@ -1,0 +1,9 @@
+<!-- OneGodian Origin: 2027-style WordPress-ready WPBakery body.
+     Existing public managed route: /onegodian-origins/
+     OneGodian Members v2.10.6 candidate (or later) must be installed for shortcode.
+     Public page is uncredentialed and financial-services independent.
+     Preserve editor-authored rows. Members owns the shortcode-controlled content.
+-->
+[vc_row full_width="stretch_row_content" el_class="onegodian-origin-2027-page"][vc_column][vc_column_text]
+[onegodian_origins]
+[/vc_column_text][/vc_column][/vc_row]
