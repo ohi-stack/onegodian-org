@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 manifest = json.loads((root / "config/premium-seven-pages.json").read_text())
-slugs = ["about", "identity", "learn", "time", "community", "ecosystem", "support"]
+slugs = ["about", "identity", "learn", "media", "community", "ecosystem", "support"]
 assert [p["slug"] for p in manifest["pages"]] == slugs
 assert manifest["navigation"] == [slug.upper() for slug in slugs]
 for p in manifest["pages"]:
@@ -37,3 +37,11 @@ php = (root / "wordpress/plugins/onegodian-premium-vc-pages/onegodian-premium-vc
 for slug in slugs:
     assert "'" + slug + "'" in php
 print("PASS: seven WPBakery source contracts and scoped plugin assets")
+
+# The former top-level Time source remains available as a supplementary page.
+for extra in ("wordpress/pages/premium-seven/time.vc.txt", "wordpress/pages/media-center.vc.txt", "wordpress/pages/onegodian-campus.vc.txt"):
+    assert (root / extra).is_file(), extra
+assert [x["slug"] for x in manifest["secondary_pages"]] == ["time", "media-center"]
+assert manifest["secondary_pages"][0]["primary_parent"] == "learn"
+assert "'time'" in php and "'media-center'" in php and "'onegodian-campus'" in php
+print("PASS: Time retained under Learn and Media Center/Campus sources preserved")
