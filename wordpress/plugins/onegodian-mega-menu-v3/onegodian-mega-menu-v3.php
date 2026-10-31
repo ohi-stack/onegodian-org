@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OneGodian Mega Menu v3
  * Description: Reversible 7 × 6 × 7 enterprise navigation for the existing OneGodian.org WordPress menu.
- * Version: 3.0.0
+ * Version: 3.1.0
  * Requires PHP: 7.4
  * Text Domain: onegodian-mega-menu-v3
  * Author: ONEGODIAN, LLC
@@ -12,7 +12,7 @@
 
 defined('ABSPATH') || exit;
 
-define('OGMM_V3_VERSION', '3.0.0');
+define('OGMM_V3_VERSION', '3.1.0');
 define('OGMM_V3_DIR', plugin_dir_path(__FILE__));
 define('OGMM_V3_URL', plugin_dir_url(__FILE__));
 
@@ -20,7 +20,7 @@ require_once OGMM_V3_DIR . 'includes/class-ogmm-v3-admin.php';
 
 /** Canonical root sections (navigation only; INO governance is not delegated here). */
 function ogmm_v3_areas() {
-    return array('ABOUT', 'IDENTITY', 'LEARN', 'TIME', 'COMMUNITY', 'ECOSYSTEM', 'SUPPORT');
+    return array('ABOUT', 'IDENTITY', 'LEARN', 'COMMUNITY', 'ECOSYSTEM', 'SUPPORT', 'MEDIA CENTER');
 }
 
 function ogmm_v3_settings() {
@@ -143,6 +143,11 @@ function ogmm_v3_render($menu_id) {
     $utilities = array();
     foreach ($roots as $root) {
         $key = strtoupper(trim((string) $root->title));
+        if ($key === 'TIME') {
+            // Preserve the retired WordPress root for rollback, but never display an eighth primary area.
+            // Time tools are assigned to LEARN by the managed-page manifest.
+            continue;
+        }
         if (in_array($key, ogmm_v3_areas(), true) && !isset($sections[$key])) {
             $sections[$key] = $root;
         } else {
