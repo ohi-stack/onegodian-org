@@ -1,13 +1,13 @@
 # OneGodian Mega Menu v3 — Deployment and Rollback
 
-**Version:** 3.0.0  
-**Foundation:** OneGodian.org October 11, 2026 seven-area, 43-page managed navigation inventory  
+**Version:** 3.1.0  
+**Foundation:** OneGodian.org October 31, 2026 seven-area, 46-page managed navigation inventory  
 **Code:** wordpress/plugins/onegodian-mega-menu-v3/  
 **Status:** Repository staging candidate; live WordPress installation and browser acceptance remain pending.
 
 ## Design contract
 
-The seven primary navigation areas are **ABOUT · IDENTITY · LEARN · TIME · COMMUNITY · ECOSYSTEM · SUPPORT**. Each area opens a mega panel with **up to six columns per desktop row** and **up to seven links in each column**. If imported legacy navigation exceeds six columns, columns wrap rather than disappearing. Groups exceeding seven links split into continuation columns.
+The seven primary navigation areas are **ABOUT · IDENTITY · LEARN · COMMUNITY · ECOSYSTEM · SUPPORT · MEDIA CENTER**. Each area opens a mega panel with **up to six columns per desktop row** and **up to seven links in each column**. If imported legacy navigation exceeds six columns, columns wrap rather than disappearing. Groups exceeding seven links split into continuation columns.
 
 Visual behavior includes a dark obsidian backdrop, gold and violet gradient lighting, translucent cards, animated gold sweeps, subtle hover elevation, and a reduced-motion preference. Desktop behavior includes pointer hover with a small delayed close, click, keyboard focus, Escape to dismiss, and left/right/Home/End on root triggers. Mobile uses a touch toggle, independent accordions, one-column phone panels and two-column tablet panels.
 
@@ -23,11 +23,11 @@ The plugin uses the existing WordPress menu ID and retains unrelated roots plus 
 
 3. Install and activate the archive on staging. Under **Appearance → OneGodian Mega Menu v3**, select the existing menu and save. The frontend replacement option is **off by default**, so native v2 rendering remains available.
 4. Review the read-only dry run, then choose **Populate existing menu (reversible)**. The synchronizer adds only verified published pages whose shortcodes are registered. It preserves other menu links, does not overwrite conflicting URL entries, and records each new menu-item ID for rollback.
-5. Reported missing Members (/members/) and Community Groups (/groups/) remain excluded regardless of placeholder page availability. Verify Contributor Intake separately; its supplied status was unspecified.
+5. Members (/members/) and Community Groups (/groups/) were reclassified as Managed / Working in the October 31 supplied inventory; their inclusion still requires a published page and registered shortcode. Member Resources (/resources/) and Certificates (/certificates/) are flagged Needs Review. All routes, including Contributor Intake, remain runtime gated.
 6. Review the actual WordPress menu in Appearance → Menus. When ready, enable frontend replacement. If LA-Studio Header Builder bypasses the WordPress wp_nav_menu() function, insert shortcode **[onegodian_mega_menu_v3]** into the header instead of using replacement. Do not render both copies in the same header.
 7. Confirm the LA-Studio header permits **overflow: visible** and a sufficiently high z-index; verify sticky headers, page cache, mobile and keyboard behavior. Obtain human approval before production deployment.
 
-An existing WordPress menu explicitly named **OneGodian Mega Menu v2** or containing **10.11.26 Mega Menu** is renamed to **OneGodian Mega Menu v3** when the population action completes, unless that new name already belongs to a different menu. The original name is retained in a rollback ledger.
+The former TIME root is retained in the WordPress menu database but suppressed from v3 frontend rendering, so its canonical OneGodian Time links are presented under LEARN. The Media Center root links to /media-center/ if that WordPress page is published. See docs/navigation/ONEGODIAN_ORG_SEVEN_MAIN_AREAS_2026-10-31.md.\n\nAn existing WordPress menu explicitly named **OneGodian Mega Menu v2** or containing **10.11.26 Mega Menu** is renamed to **OneGodian Mega Menu v3** when the population action completes, unless that new name already belongs to a different menu. The original name is retained in a rollback ledger.
 
 ## Rollback
 
@@ -39,7 +39,7 @@ Rollback is intentionally narrower than a full database restore. It cannot undo 
 
 | Test | Expected |
 |---|---|
-| Seven primary sections | Exactly seven canonical root headings |
+| Seven primary sections | ABOUT, IDENTITY, LEARN, COMMUNITY, ECOSYSTEM, SUPPORT, MEDIA CENTER, in that order |\n| Reclassification | No standalone TIME root; Time tools under LEARN, Media Center seventh |
 | Desktop grid | No more than six columns per row, no more than seven links per column |
 | Existing WordPress links | Unrelated utility roots and their descendants remain reachable |
 | Content readiness | Shortcode and published-page gates; two known missing pages withheld |
