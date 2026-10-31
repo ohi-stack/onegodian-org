@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', function () {
         return;
     }
 
-    $seven_pages = array('about', 'identity', 'learn', 'media', 'time', 'media-center', 'community', 'ecosystem', 'support');
+    $seven_pages = array('about', 'identity', 'learn', 'media', 'time', 'media-center', 'onegodian-campus', 'community', 'ecosystem', 'support');
     if (is_page($seven_pages)) {
         wp_enqueue_style(
             'onegodian-premium-vc-pages',
