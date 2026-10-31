@@ -1,0 +1,455 @@
+{
+  "schema_version": "2027.10.31.1",
+  "status": "staging-candidate-not-deployed",
+  "canonical_site": "https://onegodian.org",
+  "heading_order": [
+    "About",
+    "Identity",
+    "Learn",
+    "Media",
+    "Community",
+    "Ecosystem",
+    "Support"
+  ],
+  "rules": {
+    "time_parent": "Learn",
+    "media_position": 4,
+    "media_featured": "/media-center/",
+    "campus_primary_parent": "Learn",
+    "campus_crosslink_parent": "Ecosystem",
+    "account_header_action": "/account/",
+    "dashboard_header_action": "/dashboard/",
+    "desktop_mobile_same_tree": true
+  },
+  "items": [
+    {
+      "name": "About",
+      "path": "/about/",
+      "columns": [
+        {
+          "title": "Origins & Founder",
+          "links": [
+            {
+              "name": "OneGodian Origin",
+              "path": "/onegodian-origins/"
+            },
+            {
+              "name": "Founder History",
+              "path": "/founder-history/"
+            },
+            {
+              "name": "History & Legacy",
+              "path": "/history-legacy/"
+            }
+          ]
+        },
+        {
+          "title": "Historical Record",
+          "links": [
+            {
+              "name": "Major Milestones",
+              "path": "/major-milestones/"
+            },
+            {
+              "name": "Creations & Inventions",
+              "path": "/creations-inventions/"
+            },
+            {
+              "name": "Verified Records",
+              "path": "/verified-records/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Identity",
+      "path": "/identity/",
+      "columns": [
+        {
+          "title": "What It Means",
+          "links": [
+            {
+              "name": "What Is OneGodian?",
+              "path": "/what-is-onegodian/"
+            },
+            {
+              "name": "Membership",
+              "path": "/membership/"
+            },
+            {
+              "name": "OneGodian Ally",
+              "path": "/onegodian-ally/",
+              "login": true
+            }
+          ]
+        },
+        {
+          "title": "Belief & Reflection",
+          "links": [
+            {
+              "name": "Identity & Belief Mapper Lite",
+              "path": "/belief-mapper-lite/"
+            },
+            {
+              "name": "Identity & Belief Mapper",
+              "path": "/identity-belief-mapper/",
+              "login": true
+            },
+            {
+              "name": "My Belief Map",
+              "path": "/belief-map/",
+              "login": true
+            },
+            {
+              "name": "My Journey",
+              "path": "/journey/",
+              "login": true
+            }
+          ]
+        },
+        {
+          "title": "Family & Records",
+          "links": [
+            {
+              "name": "OneGodian Lineage",
+              "path": "/lineage/"
+            },
+            {
+              "name": "Family Tree",
+              "path": "/family-tree/"
+            },
+            {
+              "name": "Interactive Lineage Network",
+              "path": "/lineage-network/",
+              "candidate": true
+            },
+            {
+              "name": "My OneGodian ID",
+              "path": "/member-id/",
+              "login": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Learn",
+      "path": "/learn/",
+      "columns": [
+        {
+          "title": "Start Learning",
+          "links": [
+            {
+              "name": "OneGodian 101",
+              "path": "/onegodian-101/"
+            },
+            {
+              "name": "OneGodian 101 Progress",
+              "path": "/onegodian-101-progress/",
+              "login": true
+            },
+            {
+              "name": "Learning Progress",
+              "path": "/onegodian-101-progress/",
+              "login": true
+            }
+          ]
+        },
+        {
+          "title": "OneGodian Time",
+          "links": [
+            {
+              "name": "OneGodian Time",
+              "path": "/onegodian-time/"
+            },
+            {
+              "name": "OneGodian Date Converter",
+              "path": "/onegodian-date-converter/"
+            }
+          ]
+        },
+        {
+          "title": "Campus & Resources",
+          "links": [
+            {
+              "name": "OneGodian Campus",
+              "path": "/onegodian-campus/",
+              "candidate": true
+            },
+            {
+              "name": "Member Resources",
+              "path": "/resources/",
+              "login": true
+            },
+            {
+              "name": "University of OneGodian",
+              "path": "https://u.onegodian.com/",
+              "external": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "path": "/media/",
+      "columns": [
+        {
+          "title": "Featured Destination",
+          "links": [
+            {
+              "name": "Media Center",
+              "path": "/media-center/",
+              "candidate": true,
+              "featured": true
+            },
+            {
+              "name": "Digital Museum",
+              "path": "/digital-museum/"
+            }
+          ]
+        },
+        {
+          "title": "Archives & Evidence",
+          "links": [
+            {
+              "name": "Media Archive",
+              "path": "/media-archive/"
+            },
+            {
+              "name": "Documents & Artifacts",
+              "path": "/documents-artifacts/"
+            },
+            {
+              "name": "Interactive Timeline",
+              "path": "/interactive-timeline/"
+            },
+            {
+              "name": "Verified Records",
+              "path": "/verified-records/"
+            }
+          ]
+        },
+        {
+          "title": "Publications",
+          "links": [
+            {
+              "name": "Publications",
+              "path": "/publications/",
+              "candidate": true
+            },
+            {
+              "name": "1926 → 2026 → 2126",
+              "path": "/1926-2026-2126/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "path": "/community/",
+      "columns": [
+        {
+          "title": "Member Spaces",
+          "links": [
+            {
+              "name": "Member Dashboard",
+              "path": "/dashboard/",
+              "login": true
+            },
+            {
+              "name": "OneGodian Community",
+              "path": "/community/",
+              "login": true
+            },
+            {
+              "name": "Member Profile",
+              "path": "/profile/",
+              "login": true
+            },
+            {
+              "name": "Members",
+              "path": "/members/",
+              "login": true
+            }
+          ]
+        },
+        {
+          "title": "Connect",
+          "links": [
+            {
+              "name": "Groups",
+              "path": "/groups/",
+              "login": true
+            },
+            {
+              "name": "Messages",
+              "path": "/member-messages/",
+              "login": true
+            },
+            {
+              "name": "Notifications",
+              "path": "/member-notifications/",
+              "login": true
+            },
+            {
+              "name": "Creator Network",
+              "path": "/creator-network/",
+              "login": true
+            }
+          ]
+        },
+        {
+          "title": "Support & Participation",
+          "links": [
+            {
+              "name": "Member Support",
+              "path": "/member-support/",
+              "login": true
+            },
+            {
+              "name": "Member Ecosystem",
+              "path": "/member-ecosystem/",
+              "login": true
+            },
+            {
+              "name": "Affiliate Dashboard",
+              "path": "/affiliate-dashboard/",
+              "login": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ecosystem",
+      "path": "/ecosystem/",
+      "columns": [
+        {
+          "title": "Explore",
+          "links": [
+            {
+              "name": "Ecosystem Map",
+              "path": "/ecosystem-map/",
+              "candidate": true
+            },
+            {
+              "name": "OneGodian City",
+              "path": "/onegodian-city/",
+              "candidate": true
+            },
+            {
+              "name": "OneGodian Campus",
+              "path": "/onegodian-campus/",
+              "candidate": true
+            }
+          ]
+        },
+        {
+          "title": "Development & Platforms",
+          "links": [
+            {
+              "name": "Technology & Platforms",
+              "path": "/technology-platforms/",
+              "candidate": true
+            },
+            {
+              "name": "Development Opportunities",
+              "path": "/development-opportunities/",
+              "candidate": true
+            },
+            {
+              "name": "Business & Commerce",
+              "path": "/business-commerce/",
+              "candidate": true
+            }
+          ]
+        },
+        {
+          "title": "Connected Platforms",
+          "links": [
+            {
+              "name": "OneGodian Commerce",
+              "path": "https://onegodian.com/",
+              "external": true
+            },
+            {
+              "name": "University of OneGodian",
+              "path": "https://u.onegodian.com/",
+              "external": true
+            },
+            {
+              "name": "ODeFi Digital Finance",
+              "path": "https://odefi.onegodian.com/",
+              "external": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "path": "/support/",
+      "columns": [
+        {
+          "title": "Contribute & Join",
+          "links": [
+            {
+              "name": "Become a Contributor",
+              "path": "/contributors/"
+            },
+            {
+              "name": "Contributor Intake",
+              "path": "/contributor-intake/"
+            },
+            {
+              "name": "Membership Application",
+              "path": "/membership-application/"
+            },
+            {
+              "name": "Membership Inquiry",
+              "path": "/membership-inquiry/"
+            }
+          ]
+        },
+        {
+          "title": "Partnership Inquiries",
+          "links": [
+            {
+              "name": "Development Inquiry",
+              "path": "/development-inquiry/"
+            },
+            {
+              "name": "Business Inquiry",
+              "path": "/business-inquiry/"
+            },
+            {
+              "name": "Community Inquiry",
+              "path": "/community-inquiry/"
+            }
+          ]
+        },
+        {
+          "title": "Contact",
+          "links": [
+            {
+              "name": "Contact OneGodian",
+              "path": "/contact/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "header_actions": [
+    {
+      "name": "Login / My Dashboard",
+      "guest": "/account/",
+      "authenticated": "/dashboard/"
+    }
+  ],
+  "private_route_policy": "Navigation may point to protected routes but access remains enforced exclusively by the authoritative members/community plugins.",
+  "candidate_policy": "Missing or unpublished local pages must render as non-clickable labels until WordPress staging provisioning, editorial review and link acceptance. Source status is not live-status evidence."
+}
