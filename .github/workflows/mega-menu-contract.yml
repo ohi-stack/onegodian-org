@@ -1,0 +1,66 @@
+name: OneGodian.org Mega Menu Contract
+
+on:
+  push:
+    paths:
+      - 'config/onegodian-org-mega-menu.json'
+      - 'sitemaps/**'
+      - 'wordpress/pages/site-map.vc.txt'
+      - 'docs/navigation/ONEGODIAN_ORG_SITE_MAP_2026-10-11.md'
+      - 'scripts/test_site_map_contract.py'
+      - 'scripts/sync_onegodian_mega_menu.php'
+      - 'scripts/test_mega_menu_contract.py'
+      - 'wordpress/plugins/onegodian-mega-menu-v3/**'
+      - 'scripts/test_mega_menu_v3.php'
+      - 'docs/navigation/ONEGODIAN_MEGA_MENU_V3_DEPLOYMENT.md'
+      - '.github/workflows/mega-menu-contract.yml'
+  pull_request:
+    paths:
+      - 'config/onegodian-org-mega-menu.json'
+      - 'sitemaps/**'
+      - 'wordpress/pages/site-map.vc.txt'
+      - 'docs/navigation/ONEGODIAN_ORG_SITE_MAP_2026-10-11.md'
+      - 'scripts/test_site_map_contract.py'
+      - 'scripts/sync_onegodian_mega_menu.php'
+      - 'scripts/test_mega_menu_contract.py'
+      - 'wordpress/plugins/onegodian-mega-menu-v3/**'
+      - 'scripts/test_mega_menu_v3.php'
+      - 'docs/navigation/ONEGODIAN_MEGA_MENU_V3_DEPLOYMENT.md'
+      - '.github/workflows/mega-menu-contract.yml'
+
+jobs:
+  manifest-and-syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+      - name: Validate mega-menu source contract
+        run: |
+          python scripts/test_mega_menu_contract.py
+          python scripts/test_site_map_contract.py
+      - name: Lint WordPress navigation code
+        run: |
+          php -l scripts/sync_onegodian_mega_menu.php
+          php -l wordpress/plugins/onegodian-mega-menu-v3/onegodian-mega-menu-v3.php
+          php -l wordpress/plugins/onegodian-mega-menu-v3/includes/class-ogmm-v3-admin.php
+      - name: Smoke test upgrade and rollback using WordPress stubs
+        run: php scripts/test_mega_menu_v3.php
+      - name: JavaScript syntax check
+        run: node --check wordpress/plugins/onegodian-mega-menu-v3/assets/mega-menu-v3.js
+      - name: Package WordPress-installable v3 plugin
+        run: |
+          cd wordpress/plugins
+          zip -qr "$GITHUB_WORKSPACE/onegodian-mega-menu-v3.zip" onegodian-mega-menu-v3
+          unzip -t "$GITHUB_WORKSPACE/onegodian-mega-menu-v3.zip"
+      - name: Retain downloadable v3 staging ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: onegodian-mega-menu-v3-wordpress-install
+          path: onegodian-mega-menu-v3.zip
+          retention-days: 30

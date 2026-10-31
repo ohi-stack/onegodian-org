@@ -1,0 +1,131 @@
+[vc_row full_width="stretch_row_content" el_id="onegodian-site-map"][vc_column][vc_column_text]
+<style>
+#onegodian-site-map{--ogs-bg:#050507;--ogs-panel:#0e0b15;--ogs-gold:#d8b35a;--ogs-purple:#6f3cff;--ogs-white:#f5f1e8;color:var(--ogs-white);background:radial-gradient(circle at top left,rgba(111,60,255,.2),transparent 35%),radial-gradient(circle at bottom right,rgba(216,179,90,.12),transparent 40%),var(--ogs-bg);padding:72px 20px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#onegodian-site-map *{box-sizing:border-box}
+#onegodian-site-map .ogs-wrap{max-width:1180px;margin:0 auto}
+#onegodian-site-map .ogs-hero{text-align:center;margin:0 auto 54px;max-width:920px}
+#onegodian-site-map .ogs-badge{display:inline-block;border:1px solid rgba(216,179,90,.38);color:#f0d98a;background:rgba(216,179,90,.08);border-radius:999px;padding:11px 18px;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+#onegodian-site-map h1{font-size:clamp(38px,6vw,68px)!important;line-height:1.08;color:var(--ogs-white)!important;margin:24px 0 18px;font-weight:800}
+#onegodian-site-map .ogs-lead{font-size:19px;line-height:1.65;color:rgba(245,241,232,.85);margin:0 auto;max-width:760px}
+#onegodian-site-map .ogs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+#onegodian-site-map .ogs-area{background:var(--ogs-panel);border:1px solid rgba(216,179,90,.22);border-radius:22px;padding:28px;box-shadow:0 18px 44px rgba(0,0,0,.2)}
+#onegodian-site-map .ogs-area h2{font-size:25px;color:#f0d98a!important;margin:0 0 20px;font-weight:750;letter-spacing:.02em}
+#onegodian-site-map .ogs-group{margin:22px 0}
+#onegodian-site-map .ogs-group h3{font-size:16px;color:#c7b6ff!important;font-weight:700;margin:0 0 12px}
+#onegodian-site-map ul{list-style:none;padding:0;margin:0}
+#onegodian-site-map li{margin:0 0 11px;padding:0}
+#onegodian-site-map a{color:var(--ogs-white);text-decoration:none;border-bottom:1px solid rgba(216,179,90,.2);display:inline-block;padding:4px 0;line-height:1.4}
+#onegodian-site-map a:hover,#onegodian-site-map a:focus-visible{color:#f0d98a;border-bottom-color:#f0d98a;outline-offset:5px}
+#onegodian-site-map .ogs-private{color:#c7b6ff;font-size:11px;margin-left:9px;white-space:nowrap}
+#onegodian-site-map .ogs-note{margin-top:32px;font-size:14px;line-height:1.7;color:rgba(245,241,232,.75);text-align:center}
+@media(max-width:767px){#onegodian-site-map{padding:50px 16px}#onegodian-site-map .ogs-grid{grid-template-columns:1fr}#onegodian-site-map .ogs-area{padding:22px}}
+</style>
+<div class="ogs-wrap">
+<header class="ogs-hero"><span class="ogs-badge">OneGodian™ • Website • Navigation • Site Map</span><h1>Explore OneGodian</h1><p class="ogs-lead">Discover OneGodian identity, founder history, education and timekeeping, community, ecosystem, support, and the Media Center. Some destinations require member sign-in.</p></header>
+<nav class="ogs-grid" aria-label="OneGodian Website Site Map">
+<section class="ogs-area" aria-labelledby="ogs-about"><h2 id="ogs-about">ABOUT</h2>
+<div class="ogs-group"><h3>History &amp; Legacy</h3><ul>
+<li><a href="https://onegodian.org/history-legacy/">History &amp; Legacy</a></li>
+<li><a href="https://onegodian.org/major-milestones/">Major Milestones</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Chronology</h3><ul>
+<li><a href="https://onegodian.org/interactive-timeline/">Interactive Timeline</a></li>
+<li><a href="https://onegodian.org/1926-2026-2126/">1926 → 2026 → 2126</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Founder &amp; Origin</h3><ul>
+<li><a href="https://onegodian.org/founder-history/">Founder History</a></li>
+<li><a href="https://onegodian.org/onegodian-origins/">OneGodian Origin</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Records &amp; Evidence</h3><ul>
+<li><a href="https://onegodian.org/creations-inventions/">Creations &amp; Inventions</a></li>
+<li><a href="https://onegodian.org/documents-artifacts/">Documents &amp; Artifacts</a></li>
+<li><a href="https://onegodian.org/verified-records/">Verified Records</a></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-identity"><h2 id="ogs-identity">IDENTITY</h2>
+<div class="ogs-group"><h3>Membership &amp; Ally</h3><ul>
+<li><a href="https://onegodian.org/membership/">Membership</a></li>
+<li><a href="https://onegodian.org/onegodian-ally/">OneGodian Ally</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Belief Mapping</h3><ul>
+<li><a href="https://onegodian.org/belief-mapper-lite/">Identity &amp; Belief Mapper Lite</a></li>
+<li><a href="https://onegodian.org/identity-belief-mapper/">Identity &amp; Belief Mapper</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/belief-map/">Personal Belief Map</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Personal Journey</h3><ul>
+<li><a href="https://onegodian.org/journey/">OneGodian Journey</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-learn"><h2 id="ogs-learn">LEARN</h2>
+<div class="ogs-group"><h3>OneGodian 101</h3><ul>
+<li><a href="https://onegodian.org/onegodian-101/">OneGodian 101</a></li>
+<li><a href="https://onegodian.org/onegodian-101-progress/">OneGodian 101 Progress</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>OneGodian Time</h3><ul>
+<li><a href="https://onegodian.org/onegodian-time/">OneGodian Time</a></li>
+<li><a href="https://onegodian.org/onegodian-date-converter/">OneGodian Date Converter</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Learning Resources</h3><ul>
+<li><a href="https://onegodian.org/resources/">Member Resources</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span><span class="ogs-private">Under review</span></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-community"><h2 id="ogs-community">COMMUNITY</h2>
+<div class="ogs-group"><h3>Member Access</h3><ul>
+<li><a href="https://onegodian.org/dashboard/">Member Dashboard</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/profile/">Member Profile</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/account/">Login &amp; Account</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Member Credentials</h3><ul>
+<li><a href="https://onegodian.org/certificates/">Certificates</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span><span class="ogs-private">Under review</span></li>
+<li><a href="https://onegodian.org/member-id/">My OneGodian ID</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Community Spaces</h3><ul>
+<li><a href="https://onegodian.org/community/">OneGodian Community</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/members/">Members</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/groups/">Community Groups</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Communications &amp; Help</h3><ul>
+<li><a href="https://onegodian.org/member-messages/">Messages</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/member-notifications/">Notifications</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+<li><a href="https://onegodian.org/member-support/">Member Support</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Lineage &amp; Family</h3><ul>
+<li><a href="https://onegodian.org/lineage/">OneGodian Lineage</a></li>
+<li><a href="https://onegodian.org/family-tree/">OneGodian Family Tree</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Membership Applications</h3><ul>
+<li><a href="https://onegodian.org/membership-application/">Membership Application</a></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-ecosystem"><h2 id="ogs-ecosystem">ECOSYSTEM</h2>
+<div class="ogs-group"><h3>Member Ecosystem</h3><ul>
+<li><a href="https://onegodian.org/member-ecosystem/">Member Ecosystem</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+<div class="ogs-group"><h3>Creator &amp; Partner Tools</h3><ul>
+<li><a href="https://onegodian.org/affiliate-dashboard/">Affiliate Dashboard</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-support"><h2 id="ogs-support">SUPPORT</h2>
+<div class="ogs-group"><h3>Contributions</h3><ul>
+<li><a href="https://onegodian.org/contributors/">Contributors</a></li>
+<li><a href="https://onegodian.org/contributor-intake/">Contributor Intake</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Contact &amp; Inquiries</h3><ul>
+<li><a href="https://onegodian.org/contact/">Contact OneGodian</a></li>
+<li><a href="https://onegodian.org/development-inquiry/">Development Inquiry</a></li>
+<li><a href="https://onegodian.org/business-inquiry/">Business Inquiry</a></li>
+<li><a href="https://onegodian.org/community-inquiry/">Community Inquiry</a></li>
+<li><a href="https://onegodian.org/membership-inquiry/">Membership Inquiry</a></li>
+</ul></div>
+</section>
+<section class="ogs-area" aria-labelledby="ogs-media-center"><h2 id="ogs-media-center">MEDIA CENTER</h2>
+<div class="ogs-group"><h3>Museum &amp; Archives</h3><ul>
+<li><a href="https://onegodian.org/digital-museum/">Digital Museum</a></li>
+<li><a href="https://onegodian.org/media-archive/">Media Archive</a></li>
+</ul></div>
+<div class="ogs-group"><h3>Creators &amp; Collaboration</h3><ul>
+<li><a href="https://onegodian.org/creator-network/">Creator Network</a><span class="ogs-private" aria-label="Member sign-in required">Member sign-in</span></li>
+</ul></div>
+</section>
+</nav><p class="ogs-note">Member profiles, belief information, credentials, messages, and account records remain protected by OneGodian Members access controls. The Members directory and Community Groups use their current managed slugs but still require validated WordPress publication and registered shortcodes. Time is nested under Learn; Media Center is seventh.</p></div>
+[/vc_column_text][/vc_column][/vc_row]
