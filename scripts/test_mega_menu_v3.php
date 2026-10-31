@@ -14,9 +14,11 @@ $GLOBALS['ogmm_items'] = array(
     (object) array('ID' => 200, 'menu_item_parent' => '0', 'title' => 'START HERE', 'url' => 'https://onegodian.org/start-here/', 'target' => ''),
     (object) array('ID' => 201, 'menu_item_parent' => '0', 'title' => 'RESOURCES', 'url' => '#', 'target' => ''),
     (object) array('ID' => 202, 'menu_item_parent' => '201', 'title' => 'External Guide', 'url' => 'https://onegodian.org/guide/', 'target' => ''),
+    (object) array('ID' => 203, 'menu_item_parent' => '0', 'title' => 'TIME', 'url' => 'https://onegodian.org/onegodian-time/', 'target' => ''),
+    (object) array('ID' => 204, 'menu_item_parent' => '203', 'title' => 'Legacy Calendar', 'url' => 'https://onegodian.org/sciences/time/', 'target' => ''),
 );
 $GLOBALS['ogmm_meta'] = array();
-$GLOBALS['ogmm_last_id'] = 202;
+$GLOBALS['ogmm_last_id'] = 204;
 $GLOBALS['ogmm_shortcode'] = array();
 
 function plugin_dir_path($file) { return dirname($file) . '/'; }
@@ -86,17 +88,17 @@ require dirname(__DIR__) . '/wordpress/plugins/onegodian-mega-menu-v3/onegodian-
 function require_test($condition, $message) { if (!$condition) { throw new Exception($message); } }
 
 $manifest = ogmm_v3_manifest();
-require_test(!is_wp_error($manifest) && count($manifest['entries']) === 43, 'Invalid embedded manifest');
+require_test(!is_wp_error($manifest) && count($manifest['entries']) === 46, 'Invalid embedded manifest');
 $before = count($GLOBALS['ogmm_items']);
 $preview = ogmm_v3_populate(101, false);
 require_test(!is_wp_error($preview), 'Preview failed');
 require_test(count($GLOBALS['ogmm_items']) === $before, 'Dry-run changed the menu');
 require_test(!get_option('ogmm_v3_snapshot'), 'Dry-run created rollback snapshot');
-require_test($preview['skipped'] === 2, 'Missing pages not excluded');
+require_test($preview['skipped'] === 0, 'Staged test fixture should register all 46 shortcodes');
 
 $applied = ogmm_v3_populate(101, true);
 require_test(!is_wp_error($applied), 'Apply failed: ' . (is_wp_error($applied) ? $applied->get_error_message() : ''));
-require_test($applied['skipped'] === 2, 'Missing Members and Groups not gated');
+require_test($applied['skipped'] === 0, 'Simulated ready pages unexpectedly skipped');
 require_test($GLOBALS['ogmm_menu']->name === 'OneGodian Mega Menu v3', 'Menu v2 not renamed to v3');
 require_test(count($GLOBALS['ogmm_items']) > $before, 'No verified menu items created');
 $snapshot = get_option('ogmm_v3_snapshot');
@@ -106,10 +108,14 @@ require_test(count($snapshot['added_ids']) === $applied['added'], 'Ledger does n
 $rendered = ogmm_v3_render(101);
 require_test(substr_count($rendered, 'class="ogmm-v3__item"') === 7, 'Seven canonical root sections missing');
 require_test(substr_count($rendered, 'class="ogmm-v3__column"') <= 42, 'Seven by six column bound exceeded');
-require_test(strpos($rendered, 'href="https://onegodian.org/member-dashboard/"') !== false, 'Member Dashboard missing');
+require_test(strpos($rendered, 'href="https://onegodian.org/dashboard/"') !== false, 'Member Dashboard missing');
 require_test(strpos($rendered, 'aria-label="Sign-in required"') !== false, 'Member label missing');
-require_test(strpos($rendered, 'https://onegodian.org/members/') === false, 'Missing Members route surfaced');
-require_test(strpos($rendered, 'https://onegodian.org/groups/') === false, 'Missing Groups route surfaced');
+require_test(strpos($rendered, 'https://onegodian.org/members/') !== false, 'Approved Members route missing');
+require_test(strpos($rendered, 'https://onegodian.org/groups/') !== false, 'Approved Groups route missing');
+require_test(strpos($rendered, 'https://onegodian.org/onegodian-time/') !== false, 'OneGodian Time missing under Learn');
+require_test(strpos($rendered, 'ogmm-v3-1-panel-media-center') !== false, 'Media Center panel ID invalid or missing');
+require_test(strpos($rendered, 'ogmm-v3__utility">TIME') === false, 'Legacy TIME displayed as an eighth root');
+require_test(substr_count($rendered, 'class="ogmm-v3__item"') === 7, 'Navigation must contain exactly seven primary sections');
 require_test(strpos($rendered, 'https://onegodian.org/start-here/') !== false, 'Existing unrelated utility root removed');
 require_test(strpos($rendered, 'https://onegodian.org/guide/') !== false, 'Existing nested utility link removed');
 
@@ -129,4 +135,4 @@ require_test(count($GLOBALS['ogmm_items']) === $before, 'Rollback failed to pres
 require_test(!ogmm_v3_settings()['enabled'], 'Rollback did not disable enhanced renderer');
 require_test(!get_option('ogmm_v3_snapshot'), 'Rollback ledger not cleared');
 
-echo "PASS: WordPress stub v2→v3 apply, 7×6×7 render, gated pages, legacy link retention, idempotency, scoped interception and exact rollback.\n";
+echo "PASS: WordPress stub v2→v3.1 apply, 46 managed routes, seven roots, nested Time, Media Center, protected pages, idempotency and rollback.\n";
