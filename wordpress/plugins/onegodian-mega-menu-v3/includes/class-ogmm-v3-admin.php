@@ -10,12 +10,12 @@ defined('ABSPATH') || exit;
 function ogmm_v3_manifest() {
     $file = OGMM_V3_DIR . 'data/managed-pages.json';
     if (!is_readable($file)) {
-        return new WP_Error('ogmm_missing_manifest', 'The bundled October 11 page inventory is unavailable.');
+        return new WP_Error('ogmm_missing_manifest', 'The bundled October 31 page inventory is unavailable.');
     }
     $manifest = json_decode((string) file_get_contents($file), true);
     if (!is_array($manifest) || ($manifest['top_level'] ?? null) !== ogmm_v3_areas()
-        || count($manifest['entries'] ?? array()) !== 43) {
-        return new WP_Error('ogmm_invalid_manifest', 'The 43-page, seven-section source manifest failed validation.');
+        || count($manifest['entries'] ?? array()) !== 46) {
+        return new WP_Error('ogmm_invalid_manifest', 'The 46-page, seven-section source manifest failed validation.');
     }
     $seen = array();
     foreach ($manifest['entries'] as $entry) {
@@ -140,7 +140,14 @@ function ogmm_v3_populate($menu_id, $commit = false) {
     $roots = array();
     // Seven headings are structurally stable even when a managed page is not ready.
     foreach (ogmm_v3_areas() as $area) {
-        $id = $get_or_create(0, $area, '#', array('onegodian-mega-root', 'ogmm-v3-root'));
+        $root_url = '#';
+        if ($area === 'MEDIA CENTER') {
+            $media_page = get_page_by_path('media-center', OBJECT, 'page');
+            if ($media_page instanceof WP_Post && $media_page->post_status === 'publish') {
+                $root_url = home_url('/media-center/');
+            }
+        }
+        $id = $get_or_create(0, $area, $root_url, array('onegodian-mega-root', 'ogmm-v3-root'));
         if (is_wp_error($id)) {
             return $id;
         }
@@ -294,7 +301,7 @@ function ogmm_v3_admin_screen() {
         submit_button('Rollback v3 menu additions and disable renderer', 'secondary', 'submit', false, array('onclick' => "return confirm('Remove ONLY items created by v3 and restore the prior menu title?');"));
         echo '</form>';
     }
-    echo '<p><strong>Note:</strong> Two reported missing destinations (/members/ and /groups/) remain excluded. For reduced motion, accessibility testing and enterprise columns, see the bundled deployment guide.</p></div>';
+    echo '<p><strong>Note:</strong> All 46 supplied routes remain subject to actual WordPress publication and registered-shortcode checks; Resources and Certificates need independent review. For reduced motion, accessibility testing and enterprise columns, see the bundled deployment guide.</p></div>';
 }
 
 function ogmm_v3_admin_redirect($status) {
