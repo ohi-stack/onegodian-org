@@ -95,24 +95,24 @@
       }
     },
     {
-      "slug": "time",
-      "wordpress_path": "/time/",
-      "source": "wordpress/pages/premium-seven/time.vc.txt",
+      "slug": "media",
+      "wordpress_path": "/media/",
+      "source": "wordpress/pages/premium-seven/media.vc.txt",
       "hero_image": {
-        "brief": "Calendar close-up and chronological timeline",
-        "alt": "OneGodian calendar and historical timeline",
+        "brief": "Original licensed archival exhibit imagery or media production stills with record context",
+        "alt": "OneGodian media archive and documentary collections",
         "asset_url": null,
         "status": "required-not-uploaded"
       },
       "intro_video": {
-        "brief": "How OneGodian Time works, with verifiable date examples",
+        "brief": "Public introduction to OneGodian historical archives and museum collections",
         "url": null,
         "poster_url": null,
         "caption_vtt_url": null,
         "transcript_url": null,
         "status": "required-not-produced"
       },
-      "primary_action": "time",
+      "primary_action": "media-center",
       "verification": {
         "wordPressPageId": null,
         "rendered": false,
@@ -233,6 +233,12 @@
       "name": "Forms Bridge",
       "purpose": "Contact/contributor intake with submission storage and spam protection",
       "status": "integration-unverified"
+    },
+    {
+      "name": "OneGodian 2027 Navigation",
+      "purpose": "Shared mega menu and mobile accordion from approved 2027 hierarchy",
+      "path": "wordpress/plugins/onegodian-2027-navigation/",
+      "status": "source-only-not-deployed"
     }
   ],
   "navigation": {
@@ -240,7 +246,7 @@
       "ABOUT",
       "IDENTITY",
       "LEARN",
-      "TIME",
+      "MEDIA",
       "COMMUNITY",
       "ECOSYSTEM",
       "SUPPORT"
@@ -251,12 +257,17 @@
       "CONTRIBUTE"
     ],
     "home_separate": true,
-    "menu_pr": 11,
+    "menu_pr": 14,
     "require_no_retired_domains": [
       "capital.onegodian.com",
       "app.onegodian.com"
     ],
-    "note": "Never activate a menu link until its destination is checked and permission-safe."
+    "note": "Never activate a menu link until its destination is checked and permission-safe.",
+    "canonical_manifest": "config/onegodian-2027-navigation.json",
+    "media_featured": "/media-center/",
+    "time_parent": "LEARN",
+    "campus_parent": "LEARN",
+    "campus_crosslink": "ECOSYSTEM"
   },
   "release_gates": [
     "WordPress backup and restore evidence",
@@ -264,12 +275,60 @@
     "All hero media licensed, uploaded, and alt text reviewed",
     "Videos have posters, captions, transcripts and playable embeds",
     "Installed plugin versions, compatibility and staging smoke tests captured",
-    "Seven navigation links, dropdown keyboard use and persistent actions verified",
+    "Seven approved primary navigation groups, Media fourth, Time under Learn, Campus crosslink, header account action, dropdown keyboard and mobile accordion verified",
     "Logged-out and logged-in member boundary tests",
     "Core Web Vitals and accessibility smoke tests on mobile",
     "SEO titles, canonical URLs, redirects, sitemap checked",
     "Contact/contribution forms and notifications tested without payment claims",
     "2027 staging screenshot evidence at 320/375/768/1024/1440",
-    "Human approval, production backup, controlled release and rollback"
+    "Human approval, production backup, controlled release and rollback",
+    "Media and Media Center WordPress pages and canonical URLs published before enabling their live navigation links"
+  ],
+  "supporting_pages": [
+    {
+      "slug": "time",
+      "wordpress_path": "/time/",
+      "source": "wordpress/pages/premium-seven/time.vc.txt",
+      "hero_image": {
+        "brief": "Calendar close-up and chronological timeline",
+        "alt": "OneGodian calendar and historical timeline",
+        "asset_url": null,
+        "status": "required-not-uploaded"
+      },
+      "intro_video": {
+        "brief": "How OneGodian Time works, with verifiable date examples",
+        "url": null,
+        "poster_url": null,
+        "caption_vtt_url": null,
+        "transcript_url": null,
+        "status": "required-not-produced"
+      },
+      "primary_action": "time",
+      "verification": {
+        "wordPressPageId": null,
+        "rendered": false,
+        "heroLoaded": false,
+        "videoPlayable": false,
+        "captionsVerified": false,
+        "ctaVerified": false
+      },
+      "primary_parent": "learn",
+      "visibility": "supplemental; not top-level"
+    },
+    {
+      "slug": "media-center",
+      "wordpress_path": "/media-center/",
+      "source": "wordpress/pages/media-center.vc.txt",
+      "primary_parent": "media",
+      "status": "source-only-requires-publication"
+    },
+    {
+      "slug": "onegodian-campus",
+      "wordpress_path": "/onegodian-campus/",
+      "source": "wordpress/pages/onegodian-campus.vc.txt",
+      "primary_parent": "learn",
+      "crosslink_parent": "ecosystem",
+      "status": "source-only-requires-publication"
+    }
   ]
 }

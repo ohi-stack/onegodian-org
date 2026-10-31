@@ -1,15 +1,15 @@
 {
-  "version": "1.0.0",
-  "date": "2026-10-21",
+  "version": "1.1.0",
+  "date": "2026-10-31",
   "canonical_site": "https://onegodian.org",
   "staging_site": "https://2027.onegodian.org",
-  "status": "source-candidate-not-deployed",
+  "status": "2027-seven-section-staging-source-candidate-not-deployed",
   "format": "WPBakery Page Builder/Visual Composer source",
   "navigation": [
     "ABOUT",
     "IDENTITY",
     "LEARN",
-    "TIME",
+    "MEDIA",
     "COMMUNITY",
     "ECOSYSTEM",
     "SUPPORT"
@@ -45,13 +45,13 @@
       "vc_source": "wordpress/pages/premium-seven/learn.vc.txt"
     },
     {
-      "slug": "time",
-      "navigation": "TIME",
-      "path": "/time/",
-      "h1": "Time is how a history is remembered and ordered.",
-      "seo_title": "TIME | OneGodian.org",
-      "seo_description": "Learn about OneGodian Time OTS-V5, cultural chronology, dated records and supplementary date conversion.",
-      "vc_source": "wordpress/pages/premium-seven/time.vc.txt"
+      "slug": "media",
+      "navigation": "MEDIA",
+      "path": "/media/",
+      "h1": "Explore OneGodian through its documented work.",
+      "seo_title": "MEDIA | OneGodian.org",
+      "seo_description": "Visit the OneGodian Media Center, Digital Museum, historical archives, original documents and interactive timeline.",
+      "vc_source": "wordpress/pages/premium-seven/media.vc.txt"
     },
     {
       "slug": "community",
@@ -80,5 +80,25 @@
       "seo_description": "Contribute to OneGodian's development through voluntary support, location opportunities, professional services and partnerships.",
       "vc_source": "wordpress/pages/premium-seven/support.vc.txt"
     }
-  ]
+  ],
+  "navigation_manifest": "config/onegodian-2027-navigation.json",
+  "secondary_pages": [
+    {
+      "slug": "time",
+      "primary_parent": "learn",
+      "path": "/time/",
+      "h1": "Time is how a history is remembered and ordered.",
+      "vc_source": "wordpress/pages/premium-seven/time.vc.txt",
+      "visibility": "retained legacy or supplemental educational page, not a primary header item"
+    },
+    {
+      "slug": "media-center",
+      "primary_parent": "media",
+      "path": "/media-center/",
+      "h1": "OneGodian Media Center™",
+      "vc_source": "wordpress/pages/media-center.vc.txt",
+      "visibility": "featured media destination; requires WordPress page publication"
+    }
+  ],
+  "page_preservation_rule": "No deletion, shortcode replacement, member route rewrite, or modification of existing WordPress post content is authorized by this source manifest."
 }
