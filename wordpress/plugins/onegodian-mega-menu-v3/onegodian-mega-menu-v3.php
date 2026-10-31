@@ -215,8 +215,9 @@ function ogmm_v3_render($menu_id) {
             $columns = array_merge($quick_columns, $columns);
         }
         $count = count($columns);
-        $panel_id = $id . '-panel-' . strtolower($area);
-        $button_id = $id . '-trigger-' . strtolower($area);
+        $area_slug = strtolower(str_replace(' ', '-', $area));
+        $panel_id = $id . '-panel-' . $area_slug;
+        $button_id = $id . '-trigger-' . $area_slug;
         $out .= '<li class="ogmm-v3__item" data-ogmm-item>'
             . '<button class="ogmm-v3__trigger" type="button" id="' . esc_attr($button_id)
             . '" aria-expanded="false" aria-controls="' . esc_attr($panel_id) . '">'
