@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OneGodian Premium VC Pages
  * Description: Scoped WPBakery page styles for seven main OneGodian.org sections, What Is OneGodian, and the Remember Campaign.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Requires PHP: 7.4
  * Author: ONEGODIAN, LLC
  */
@@ -15,13 +15,13 @@ add_action('wp_enqueue_scripts', function () {
         return;
     }
 
-    $seven_pages = array('about', 'identity', 'learn', 'time', 'community', 'ecosystem', 'support');
+    $seven_pages = array('about', 'identity', 'learn', 'media', 'time', 'media-center', 'community', 'ecosystem', 'support');
     if (is_page($seven_pages)) {
         wp_enqueue_style(
             'onegodian-premium-vc-pages',
             plugins_url('assets/premium-seven.css', __FILE__),
             array(),
-            '1.2.0',
+            '1.3.0',
             'all'
         );
     }
@@ -31,7 +31,7 @@ add_action('wp_enqueue_scripts', function () {
             'onegodian-what-is-onegodian',
             plugins_url('assets/what-is-onegodian.css', __FILE__),
             array(),
-            '1.2.0',
+            '1.3.0',
             'all'
         );
     }
@@ -45,7 +45,7 @@ add_action('wp_enqueue_scripts', function () {
             'onegodian-remember-campaign',
             plugins_url('assets/onegodian-remember.css', __FILE__),
             array(),
-            '1.2.0',
+            '1.3.0',
             'all'
         );
     }
