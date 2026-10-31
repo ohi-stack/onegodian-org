@@ -29,8 +29,8 @@ if (!is_array($manifest) || json_last_error() !== JSON_ERROR_NONE) {
 }
 $entries = $manifest['entries'] ?? null;
 $areas = $manifest['top_level'] ?? null;
-if (!is_array($entries) || count($entries) !== 43 || !is_array($areas) || count($areas) !== 7) {
-    WP_CLI::error('Expected exactly 43 page entries and seven navigation areas.');
+if (!is_array($entries) || count($entries) !== 46 || !is_array($areas) || count($areas) !== 7) {
+    WP_CLI::error('Expected exactly 46 page entries and seven navigation areas.');
 }
 
 $raw_id = (string) getenv('ONEGODIAN_MENU_ID');
