@@ -5,6 +5,11 @@ on:
       - 'wordpress/pages/premium-seven/**'
       - 'wordpress/pages/what-is-onegodian.vc.txt'
       - 'wordpress/plugins/onegodian-premium-vc-pages/**'
+      - 'wordpress/plugins/onegodian-2027-navigation/**'
+      - 'wordpress/pages/media-center.vc.txt'
+      - 'wordpress/pages/onegodian-campus.vc.txt'
+      - 'config/onegodian-2027-navigation.json'
+      - 'scripts/test_2027_navigation.py'
       - 'config/premium-seven-pages.json'
       - 'scripts/test_premium_vc_pages.py'
       - 'scripts/test_what_is_onegodian_vc.py'
@@ -14,6 +19,11 @@ on:
       - 'wordpress/pages/premium-seven/**'
       - 'wordpress/pages/what-is-onegodian.vc.txt'
       - 'wordpress/plugins/onegodian-premium-vc-pages/**'
+      - 'wordpress/plugins/onegodian-2027-navigation/**'
+      - 'wordpress/pages/media-center.vc.txt'
+      - 'wordpress/pages/onegodian-campus.vc.txt'
+      - 'config/onegodian-2027-navigation.json'
+      - 'scripts/test_2027_navigation.py'
       - 'config/premium-seven-pages.json'
       - 'scripts/test_premium_vc_pages.py'
       - 'scripts/test_what_is_onegodian_vc.py'
@@ -30,6 +40,12 @@ jobs:
         run: python3 scripts/test_premium_vc_pages.py
       - name: Verify What Is OneGodian WPBakery source contract
         run: python3 scripts/test_what_is_onegodian_vc.py
+      - name: Validate 2027 navigation hierarchy and candidate routes
+        run: python3 scripts/test_2027_navigation.py
+      - name: Lint 2027 navigation plugin
+        run: php -l wordpress/plugins/onegodian-2027-navigation/onegodian-2027-navigation.php
+      - name: Verify menu accordion JavaScript syntax
+        run: node --check wordpress/plugins/onegodian-2027-navigation/assets/navigation.js
       - name: Lint scoped styles plugin
         run: php -l wordpress/plugins/onegodian-premium-vc-pages/onegodian-premium-vc-pages.php
       - name: Package styling plugin for staged WordPress installation
@@ -37,8 +53,15 @@ jobs:
           cd wordpress/plugins
           zip -qr "$GITHUB_WORKSPACE/onegodian-premium-vc-pages.zip" onegodian-premium-vc-pages
           unzip -t "$GITHUB_WORKSPACE/onegodian-premium-vc-pages.zip"
+      - name: Package 2027 navigation shortcode plugin
+        run: |
+          cd wordpress/plugins
+          zip -qr "$GITHUB_WORKSPACE/onegodian-2027-navigation.zip" onegodian-2027-navigation
+          unzip -t "$GITHUB_WORKSPACE/onegodian-2027-navigation.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: onegodian-premium-vc-staging-plugin
-          path: onegodian-premium-vc-pages.zip
+          path: |
+            onegodian-premium-vc-pages.zip
+            onegodian-2027-navigation.zip
           retention-days: 30
