@@ -1,0 +1,31 @@
+{
+  "schema": "onegodian.org/public-origin-v1",
+  "route": "/onegodian-origins/",
+  "title": "The Origin of OneGodian™",
+  "badge": "OneGodian™ • Foundation • Identity • History • Purpose",
+  "slug": "onegodian-origins",
+  "editor_support": [
+    "WPBakery",
+    "Gutenberg",
+    "OneGodian Visual Studio"
+  ],
+  "shortcode": "[onegodian_origins]",
+  "canonical_runtime": "onegodian-members",
+  "css_scope": ".ogm-origin-v2",
+  "onboarding_ctas": [
+    {
+      "label": "Explore OneGodian 101",
+      "href": "/onegodian-101/"
+    },
+    {
+      "label": "Discover the Ecosystem",
+      "href": "/ecosystem/"
+    }
+  ],
+  "is_public": true,
+  "login_required": false,
+  "membership_issue": false,
+  "financial_authorization": false,
+  "import_mode": "existing-managed-page-reconciliation-not-duplicate",
+  "status": "development-candidate; not deployed"
+}
